@@ -1,18 +1,38 @@
 'use client';
 
+import { useState } from 'react';
 import { Navbar } from "../../components";
+import { Explore } from "../../sections"
 import styles from '../../styles';
 import { motion } from 'framer-motion';
 import { navVariants } from '../../utils/motion';
-
-
+import { exploreWorlds } from '../../constants';
+import { staggerContainer } from '../../utils/motion';
+import { ExploreCard, TitleText, TypingText } from '../../components';
 
 const services = () => {
+    const [active, setActive] = useState('world-2');
+    function Card({ world }) {
+        return (
+            <div className="mt-2 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full h-1/2 md:max-w-custom-card-width hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 overflow-hidden">
+                <img
+                    src={world.imgUrl}
+                    alt="planet-04"
+                    className="object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg"
+                />
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{world.title}</h2>
+                    <p className="h-auto overflow-hidden mb-3 font-normal text-gray-700 dark:text-gray-400 bg-red-800">{world.description}</p>
+                </div>
+            </div>
+
+        );
+    }
+
     return (
-
         <div className="bg-primary-black overflow-hidden">
-
             <Navbar />
+            {/* every thing do in this div  */}
             <div className="justify-center items-center">
                 <motion.nav
                     variants={navVariants}
@@ -24,17 +44,27 @@ const services = () => {
                         <h1 className="text-[30px] leading-30 text-white font-black p-4 ">Services</h1>
                     </div>
                 </motion.nav>
-                <div>
-                
+                <div className="">
+                    <section className={`${styles.paddings}`} id="explore">
+                        <motion.div
+                            variants={staggerContainer}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.25 }}
+                            className={`${styles.innerWidth} mx-auto flex flex-col`}
+                        >
+                            <TypingText title="| Choose the Service you want to explore" textStyles="text-center" />
 
+                            <div className="mt-10 bg-red-800 flex flex-col items-center">
+                                {exploreWorlds.map((world, index) => (
+                                    <Card key={index} world={world} />
+                                ))}
+                            </div>
+                        </motion.div>
+                    </section>
                 </div>
-
             </div>
         </div>
-
-
-
-
     )
 }
 export default services;
