@@ -67,9 +67,9 @@ const services = () => {
                         >
                             <div className=' p-8 flex flex-col items-center'>
                                 <h2 className=' p-8 flex flex-col items-center text-3xl  text-white font-black'>
-                                    Empowering Your Digital Solutions
+                                    Tailored solutions for your business.
                                 </h2>
-                                <p className='text-xl  text-white'>Revolutionize your digital presence with our cutting-edge tech stack. Let us empower your business solutions today.</p>
+                                <p className='text-xl text-white flex flex-col items-center'>Our custom solutions can help your business reach its full potential. Our team of experts will help you <span> reach your goals by using the latest technology and tailor-made plans.</span></p>
                             </div>
                             <div className="p-8 flex flex-col items-center">
                                 {exploreWorlds.map((world, index) => (
