@@ -105,3 +105,25 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+.glowing-underline::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(to right, #ff0066, #ff4d94);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  animation: glowing-underline-animation 2.5s infinite;
+}
+
+@keyframes glowing-underline-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

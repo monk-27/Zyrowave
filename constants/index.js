@@ -3,25 +3,25 @@ export const exploreWorlds = [
     id: 'world-1',
     imgUrl: '/planet-01.png',
     title: 'Website Development',
-    description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. "
+    description: "Our professional website development services will help you build a successful, engaging website. Our talented developers create unique websites geared for search engines and user experience. We'll help you develop and launch a website that matches your brand and accomplishes your goals. Contact us today to begin."
   },
   {
     id: 'world-2',
     imgUrl: '/planet-02.png',
     title: 'Platform Development',
-    description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+    description: "Transform your digital vision into reality with our platform development services. Our team of experts builds scalable and secure platforms tailored to your business needs. Stay ahead of the competition with our cutting-edge technology and agile approach. Let us help you accelerate your growth and achieve your business goals."
   },
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
     title: 'Mobile App Development',
-    description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+    description: "Our app development services deliver powerful mobile experiences. We design and develop custom iOS and Android mobile apps for your needs. Let us help you bring your app idea to life with cutting-edge technology and user-centric design. Start your mobile app project today by contacting us."
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
     title: 'UX Design',
-    description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+    description: "UX design allows for the creation of interactive digital experiences. Improve the overall user experience while also boosting your brand's reputation. Design Innovations That Make The User Experience Easier To Navigate Our Expertise Will Help You Raise the Bar of Your Internet Presence."
   },
 
   {
@@ -115,19 +115,19 @@ export const technology = [
   {
     name: 'Nodejs',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/node-js-icon.svg',
-  },{
+  }, {
     name: 'React Native',
     url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/640px-React.svg.png',
-  },{
+  }, {
     name: 'AWS',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg',
-  },{
+  }, {
     name: 'Firebase',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-firebase-icon.svg',
-  },{
+  }, {
     name: 'Tailwind CSS',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.svg',
-  },{
+  }, {
     name: 'MongoDB',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.svg',
   },
@@ -137,16 +137,16 @@ export const technology1 = [
   {
     name: 'React Native',
     url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/640px-React.svg.png',
-  },{
+  }, {
     name: 'AWS',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg',
-  },{
+  }, {
     name: 'Firebase',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-firebase-icon.svg',
-  },{
+  }, {
     name: 'Tailwind CSS',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.svg',
-  },{
+  }, {
     name: 'MongoDB',
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.svg',
   },
