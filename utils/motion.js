@@ -32,6 +32,7 @@ export const slideIn = (direction, type, delay, duration) => ({
       delay,
       duration,
       ease: 'easeOut',
+      ease:'easeIn'
     },
   },
 });
@@ -156,6 +157,29 @@ export const footerVariants = {
       type: 'spring',
       stiffness: 80,
       delay: 0.5,
+    },
+  },
+};
+
+
+export const technoVariants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 140,
+      duration: 0.1,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      delay: 0.2,
     },
   },
 };

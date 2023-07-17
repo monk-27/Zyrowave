@@ -2,25 +2,25 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    title: 'Website Development',
     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. "
   },
   {
     id: 'world-2',
     imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    title: 'Platform Development',
     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
   },
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    title: 'Mobile App Development',
     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    title: 'UX Design',
     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
   },
 
@@ -92,3 +92,62 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+
+// technolgy apidata 
+export const technology = [
+  {
+    name: 'JavaScript',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+  },
+  {
+    name: 'Typescript',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg',
+  },
+  {
+    name: 'Reactjs',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/640px-React.svg.png',
+  },
+  {
+    name: 'Nextjs',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.svg',
+  },
+  {
+    name: 'Nodejs',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/node-js-icon.svg',
+  },{
+    name: 'React Native',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/640px-React.svg.png',
+  },{
+    name: 'AWS',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg',
+  },{
+    name: 'Firebase',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-firebase-icon.svg',
+  },{
+    name: 'Tailwind CSS',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.svg',
+  },{
+    name: 'MongoDB',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.svg',
+  },
+];
+
+export const technology1 = [
+  {
+    name: 'React Native',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/640px-React.svg.png',
+  },{
+    name: 'AWS',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg',
+  },{
+    name: 'Firebase',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-firebase-icon.svg',
+  },{
+    name: 'Tailwind CSS',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.svg',
+  },{
+    name: 'MongoDB',
+    url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.svg',
+  },
+]

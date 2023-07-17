@@ -1,17 +1,14 @@
 'use client';
 
-import { useState } from 'react';
 import { Navbar } from "../../components";
-import { Explore } from "../../sections"
 import styles from '../../styles';
 import { motion } from 'framer-motion';
-import { navVariants } from '../../utils/motion';
-import { exploreWorlds } from '../../constants';
+import { navVariants, technoVariants, slideIn, fadeIn } from '../../utils/motion';
+import { exploreWorlds, technology, technology1 } from '../../constants';
 import { staggerContainer } from '../../utils/motion';
-import { ExploreCard, TitleText, TypingText } from '../../components';
+import { TypingText } from '../../components';
 
 const services = () => {
-    const [active, setActive] = useState('world-2');
     function Card({ world }) {
         return (
             <div className={`${styles.servicescard} transform transition-transform hover:scale-100`}>
@@ -31,48 +28,104 @@ const services = () => {
 
         );
     }
+    function TechnoCard({ techno }) {
+        return (
+            <div className={`m-2 p-1 flex flex-col items-center  `}>
+                <div className='p-1'>
+                    <img
+                        src={techno.url}
+                        alt="planet-04"
+                        className='h-24 w-24 border-black shadow-2xl rounded-3xl bg-white '
+                    />
+                </div>
 
-    return (
-        <div className="bg-primary-black overflow-hidden">
-            <Navbar />
-            {/* every thing do in this div  */}
-            <div className="justify-center items-center">
-                <motion.nav
-                    variants={navVariants}
-                    initial="hidden"
-                    whileInView="show"
-                    className={`${styles.xPaddings} py-8 relative`}
-                >
-                    <div className="w-1/2 mx-auto flex justify-center bg-black rounded-lg">
-                        <h1 className="text-[30px] leading-30 text-white font-black p-4 ">Services</h1>
-                    </div>
-                </motion.nav>
-                <div className="">
-                    <section className={`${styles.paddings}`} id="explore">
-                        <motion.div
-                            variants={staggerContainer}
-                            initial="hidden"
-                            whileInView="show"
-                            viewport={{ once: false, amount: 0.25 }}
-                            className={`${styles.innerWidth} mx-auto flex flex-col`}
-                        >
-                            <TypingText title="| Choose the Service you want to explore" textStyles="text-center" />
-
-                            <div className="p-8 flex flex-col items-center">
-                                {exploreWorlds.map((world, index) => (
-                                    <motion.div
-                                        key={index}
-                                        whileHover={{ scale: 1.1 }} // This applies the scaling effect on hover
-                                    >
-                                        <Card world={world} />
-                                    </motion.div>
-                                ))}
-                            </div>
-                        </motion.div>
-                    </section>
+                <div className="justify-between p-4 leading-normal">
+                    <h2 className="text-l tracking-tight text-gray-900 shadow-2xl dark:text-white">{techno.name}</h2>
                 </div>
             </div>
-        </div>
+
+        );
+    }
+    return (
+        <>
+            <div className="gradient-02 x-0" />
+            <div className="bg-primary-black overflow-hidden">
+                <Navbar />
+                {/* every thing do in this div  */}
+                <div className="justify-center items-center">
+                    <div className="">
+                        <section className={`${styles.paddings}`} id="explore">
+                            <motion.div
+                                variants={staggerContainer}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false, amount: 0.25 }}
+                                className={`${styles.innerWidth} mx-auto flex flex-col`}
+                            >
+                                <div className=' p-8 flex flex-col items-center'>
+                                    <h2 className=' p-8 flex flex-col items-center text-3xl  text-white font-black'>
+                                        Empowering Your Digital Solutions
+                                    </h2>
+                                    <p className='text-xl  text-white'>Revolutionize your digital presence with our cutting-edge tech stack. Let us empower your business solutions today.</p>
+                                </div>
+                                <div className="p-8 flex flex-col items-center">
+                                    {exploreWorlds.map((world, index) => (
+                                        <motion.div
+                                            key={index}
+                                            whileHover={{ scale: 1.1 }} // This applies the scaling effect on hover
+                                        >
+                                            <motion.div
+                                                variants={fadeIn('up', 'tween', 0.1, 1)}
+                                                className="relative w-full md:-mt-[20px] -mt-[12px]"
+                                            >
+                                                <Card world={world} />
+                                            </motion.div>
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        </section>
+                        {/* technologys */}
+                        <div className="h-full w-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#632381] via-[#1A232E] to-[#1A232E] md:grid-cols-2">
+                            <section className='mt-24 p-8 flex flex-col items-center'>
+                                <div className=' p-8 flex flex-col items-center '>
+                                    <div className=' p-8 flex flex-col items-center'>
+                                        <h2 className=' p-8 flex flex-col items-center text-3xl  text-white font-black'>
+                                            Empowering Your Digital Solutions
+                                        </h2>
+                                        <p className='text-xl  text-white'>Revolutionize your digital presence with our cutting-edge tech stack. Let us empower your business solutions today.</p>
+                                    </div>
+                                    <div className="ml-2 flex flex-row  items-center w-full">
+                                        {technology.map((world, index) => (
+                                            <motion.nav
+                                                key={index}
+                                                variants={technoVariants}
+                                                initial="hidden"
+                                                whileInView="show"
+                                            // className={`${styles.xPaddings} py-8 relative`}
+                                            >
+                                                <TechnoCard techno={world} />
+                                            </motion.nav>
+                                        ))}
+                                    </div>
+                                    {/* <div className="ml-2 flex flex-row items-center bg-blue-900 w-full">
+                                {technology1.map((world, index) => (
+                                    <motion.div
+                                        key={index}
+                                    >
+                                        <TechnoCard techno={world} />
+                                    </motion.div>
+                                ))}
+                            </div> */}
+
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 export default services;

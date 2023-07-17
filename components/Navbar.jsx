@@ -30,13 +30,14 @@ const Navbar = () => {
         <h2 className="font-extrabold text-[34px] leading-[30px] text-white font-black"><a href="/">TechBotics</a></h2>
         <div className="mx-4 md:mx-30 gap-4 md:gap-8 flex flex-wrap md:flex-nowrap relative">
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-            {pathname==="/services"?" ":<a href="/services" >Services</a>}
+          {pathname==="/services"?<a href="/services" className='text-pink-600'>Services</a>:<a href="/services" >Services</a>}
+            
           </h6>
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-          {pathname==="/about"?" ": <a href="/about" >About Us</a>}
+          {pathname==="/about"?<a href="/about" className='text-pink-600'>About Us</a>:<a href="/about" >About Us</a>}
           </h6>
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-          {pathname==="/contact"?" ": <a href="/contact">Contact Us</a>}
+          {pathname==="/contact"?<a href="/contact" className='text-pink-600'>Contact Us</a>:<a href="/contact" >Contact Us</a>}
           </h6>
           <div className="md:hidden">
             <svg className="w-6 h-6 text-gray-600 hover:text-pink-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={toggleMenu}>
