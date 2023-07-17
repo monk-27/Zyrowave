@@ -6,9 +6,13 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
+import { useUrl } from 'nextjs-current-url';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { href: currentUrl, pathname } = useUrl() ?? {};
+
+  console.log("line 15 ------>",currentUrl,"------>",pathname)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,18 +25,18 @@ const Navbar = () => {
       whileInView="show"
       className={`${styles.xPaddings} py-8 relative`}
     >
-      <div className="absolute w-[50%] inset-0 gradient-01" />
+      {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-        <h2 className="font-extrabold text-[34px] leading-[30px] text-white font-black">TechBotics</h2>
+        <h2 className="font-extrabold text-[34px] leading-[30px] text-white font-black"><a href="/">TechBotics</a></h2>
         <div className="mx-4 md:mx-30 gap-4 md:gap-8 flex flex-wrap md:flex-nowrap relative">
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-            <a href="/services" target="_blank">Services</a>
+            {pathname==="/services"?" ":<a href="/services" >Services</a>}
           </h6>
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-            <a href="/about" target="_blank">About Us</a>
+          {pathname==="/about"?" ": <a href="/about" >About Us</a>}
           </h6>
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-            <a href="/contact" target="_blank">Contact Us</a>
+          {pathname==="/contact"?" ": <a href="/contact">Contact Us</a>}
           </h6>
           <div className="md:hidden">
             <svg className="w-6 h-6 text-gray-600 hover:text-pink-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={toggleMenu}>
@@ -42,9 +46,9 @@ const Navbar = () => {
           {isMenuOpen && (
             <div className={"absolute top-full left-10/2 transform -translate-x-1/2 mt-1 p-4 bg-white shadow h-[130px] w-[164px] text-white bg-gray-900  border-2 border-pink-900 rounded-lg"}>
               {/* Add your upper options dropdown content here */}
-              <a href="/services" className="block  hover:text-pink-600 py-1 text-white" target="_blank">Services</a>
-              <a href="/about" className="block  hover:text-pink-600 py-1 text-white" target="_blank">About Us</a>
-              <a href="/contact" className="block  hover:text-pink-600 py-1 text-white" target="_blank">Contact Us</a>
+              <a href="/services" className="block  hover:text-pink-600 py-1 text-white" target="_blank"></a>
+              <a href="/about" className="block  hover:text-pink-600 py-1 text-white" target="_blank"></a>
+              <a href="/contact" className="block  hover:text-pink-600 py-1 text-white" target="_blank"></a>
             </div>
           )}
         </div>

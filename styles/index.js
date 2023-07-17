@@ -13,6 +13,8 @@ const styles = {
   flexEnd: 'flex justify-end',
   navPadding: 'pt-[98px]',
   navoption:"font-extrabold text-[24px] leading-[30px] text-white font-semibold",
+  navlogo:"font-extrabold text-[24px] leading-[30px] text-white font-semibold",
+
 
   // hero section
   heroHeading:
