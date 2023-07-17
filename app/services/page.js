@@ -14,15 +14,18 @@ const services = () => {
     const [active, setActive] = useState('world-2');
     function Card({ world }) {
         return (
-            <div className="mt-2 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full h-1/2 md:max-w-custom-card-width hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 overflow-hidden">
-                <img
-                    src={world.imgUrl}
-                    alt="planet-04"
-                    className="object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg"
-                />
+            <div className={`${styles.servicescard} transform transition-transform hover:scale-100`}>
+                <div className='h-full w-1/2 p-4'>
+                    <img
+                        src={world.imgUrl}
+                        alt="planet-04"
+                        className='w-96 h-full border-black shadow-2xl rounded-3xl '
+                    />
+                </div>
+
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{world.title}</h2>
-                    <p className="h-auto overflow-hidden mb-3 font-normal text-gray-700 dark:text-gray-400 bg-red-800">{world.description}</p>
+                    <p className="h-auto overflow-hidden mb-3 font-normal text-gray-700 dark:text-gray-400">{world.description}</p>
                 </div>
             </div>
 
@@ -55,9 +58,14 @@ const services = () => {
                         >
                             <TypingText title="| Choose the Service you want to explore" textStyles="text-center" />
 
-                            <div className="mt-10 bg-red-800 flex flex-col items-center">
+                            <div className="p-8 flex flex-col items-center">
                                 {exploreWorlds.map((world, index) => (
-                                    <Card key={index} world={world} />
+                                    <motion.div
+                                        key={index}
+                                        whileHover={{ scale: 1.1 }} // This applies the scaling effect on hover
+                                    >
+                                        <Card world={world} />
+                                    </motion.div>
                                 ))}
                             </div>
                         </motion.div>
