@@ -22,14 +22,7 @@ export const exploreWorlds = [
     imgUrl: '/planet-04.png',
     title: 'UX Design',
     description: "UX design allows for the creation of interactive digital experiences. Improve the overall user experience while also boosting your brand's reputation. Design Innovations That Make The User Experience Easier To Navigate Our Expertise Will Help You Raise the Bar of Your Internet Presence."
-  },
-
-  {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
-    description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-  },
+  }
 ];
 
 export const startingFeatures = [
@@ -85,7 +78,7 @@ export const socials = [
   },
   {
     name: 'instagram',
-    url: '/instagram.svg',
+    url: '/linkedin.svg',
   },
   {
     name: 'facebook',

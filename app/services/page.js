@@ -1,6 +1,6 @@
 'use client';
 
-import { Navbar } from "../../components";
+import { Navbar, Footer } from "../../components";
 import styles from '../../styles';
 import { motion } from 'framer-motion';
 import { technoVariants, slideIn, fadeIn } from '../../utils/motion';
@@ -21,7 +21,7 @@ const services = () => {
                 </div>
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white relative pb-2">
-                        {world.title}<br/>
+                        {world.title}<br />
                         <span className="glowing-underline"></span>
                     </h2>
                     <p className="h-auto overflow-hidden mb-3 font-normal text-gray-700 dark:text-gray-400">{world.description}</p>
@@ -90,7 +90,7 @@ const services = () => {
                     </section>
                     {/* technologys */}
                     <div className="h-full w-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#632381] via-[#1A232E] to-[#1A232E] md:grid-cols-2">
-                        <section className='mt-24 p-8 flex flex-col items-center'>
+                        <section className='mt-18 p-8 flex flex-col items-center'>
                             <div className=' p-8 flex flex-col items-center '>
                                 <div className=' p-8 flex flex-col items-center'>
                                     <h2 className=' p-8 flex flex-col items-center text-3xl  text-white font-black'>
@@ -146,6 +146,11 @@ const services = () => {
                     </section>
 
                 </div>
+
+                <div className="w-full h-72 mx-auto flex justify-center text-white text-lg font-bold pb-5">
+                    <Footer />
+                </div>
+
             </div>
         </>
     )

@@ -6,56 +6,70 @@ import { socials } from '../constants';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
-const Footer = () => (
-  <motion.footer
-    variants={footerVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
-  >
-    <div className="footer-gradient" />
-    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Enter the Metaverse
-        </h4>
-        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Enter Metaverse
-          </span>
-        </button>
-      </div>
-
-      <div className="flex flex-col">
-        <div className="mb-[50px] h-[2px] bg-white opacity-10" />
-
-        <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">
-            METAVERUS
-          </h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2021 - 2022 Metaversus. All rights reserved.
-          </p>
-
-          <div className="flex gap-4">
-            {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
-            ))}
+const Footer = () => {
+  return (
+    <>
+      <footer className="bg-white w-full h-full rounded-lg shadow dark:bg-gray-900 m-4">
+        <div className="w-full h-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a href="/" className="flex items-center mb-4 sm:mb-0">
+              <img src="https://img.icons8.com/stickers/100/decentralized-network.png" className="h-12 mr-3" alt="Flowbite Logo" />
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TechBotics</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
+              </li>
+              <li>
+                <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">Contact</a>
+              </li>
+            </ul>
           </div>
+          <hr className="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-3" />
+          {/* Social media  */}
+          <div className="flex flex-col items-center mb-6">
+            <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 ">
+              <li className=' ml-10 h-20 flex flex-row items-center'>
+                <div className=' flex flex-col items-center'>
+                  <img src="/twitter.svg" alt="Flowbite Logo" className="h-8 mb-2" />
+                  <h1>Twitter</h1>
+                </div>
+
+              </li>
+              <li className=' ml-10 h-20 flex flex-row items-center'>
+                <div className=' flex flex-col items-center'>
+                  <img src="/linkedin.svg" alt="Flowbite Logo" className="h-8 mb-2" />
+                  <h1>Linkedin</h1>
+                </div>
+
+              </li>
+              <li className=' ml-10 h-20 flex flex-row items-center'>
+                <div className=' flex flex-col items-center'>
+                  <img src="/instagram.svg" alt="Flowbite Logo" className="h-8 mb-2" />
+                  <h1>Instagram</h1>
+                </div>
+
+              </li>
+              <li className=' ml-10 mr-10 h-20 flex flex-row items-center'>
+                <div className=' flex flex-col items-center'>
+                  <img src="/facebook.svg" alt="Flowbite Logo" className="h-8 mb-2" />
+                  <h1>Facebook</h1>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">TechBotics™</a>. All Rights Reserved.</span>
         </div>
-      </div>
-    </div>
-  </motion.footer>
-);
+      </footer>
+    </>
+  )
+};
 
 export default Footer;
