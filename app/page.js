@@ -22,7 +22,10 @@ const Page = () => (
 
       <Feedback />
     </div>
-    <Footer />
+    <div className="w-full h-72 mx-auto flex justify-center text-white text-lg font-bold pb-5">
+      <Footer />
+    </div>
+
   </div>
 );
 

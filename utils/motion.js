@@ -32,7 +32,6 @@ export const slideIn = (direction, type, delay, duration) => ({
       delay,
       duration,
       ease: 'easeOut',
-      ease:'easeIn'
     },
   },
 });
@@ -160,8 +159,6 @@ export const footerVariants = {
     },
   },
 };
-
-
 export const technoVariants = {
   hidden: {
     opacity: 0,

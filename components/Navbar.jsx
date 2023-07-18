@@ -1,18 +1,20 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable no-template-curly-in-string */
 
 'use client';
 
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+import { useUrl } from 'nextjs-current-url';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import { useUrl } from 'nextjs-current-url';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { href: currentUrl, pathname } = useUrl() ?? {};
 
-  console.log("line 15 ------>",currentUrl,"------>",pathname)
+  console.log('line 15 ------>', currentUrl, '------>', pathname);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,17 +29,17 @@ const Navbar = () => {
     >
       {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-        <h2 className="font-extrabold text-[34px] leading-[30px] text-white font-black"><a href="/">TechBotics</a></h2>
+        <h2 className="text-[34px] leading-[30px] text-white font-black"><a href="/">TechBotics</a></h2>
         <div className="mx-4 md:mx-30 gap-4 md:gap-8 flex flex-wrap md:flex-nowrap relative">
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-          {pathname==="/services"?<a href="/services" className='text-pink-600'>Services</a>:<a href="/services" >Services</a>}
-            
+            {pathname === '/services' ? <a href="/services" className="text-pink-600">Services</a> : <a href="/services">Services</a>}
+
           </h6>
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-          {pathname==="/about"?<a href="/about" className='text-pink-600'>About Us</a>:<a href="/about" >About Us</a>}
+            {pathname === '/about' ? <a href="/about" className="text-pink-600">About Us</a> : <a href="/about">About Us</a>}
           </h6>
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
-          {pathname==="/contact"?<a href="/contact" className='text-pink-600'>Contact Us</a>:<a href="/contact" >Contact Us</a>}
+            {pathname === '/contact' ? <a href="/contact" className="text-pink-600">Contact Us</a> : <a href="/contact">Contact Us</a>}
           </h6>
           <div className="md:hidden">
             <svg className="w-6 h-6 text-gray-600 hover:text-pink-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={toggleMenu}>
@@ -45,11 +47,11 @@ const Navbar = () => {
             </svg>
           </div>
           {isMenuOpen && (
-            <div className={"absolute top-full left-10/2 transform -translate-x-1/2 mt-1 p-4 bg-white shadow h-[130px] w-[164px] text-white bg-gray-900  border-2 border-pink-900 rounded-lg"}>
+            <div className="absolute top-full left-10/2 transform -translate-x-1/2 mt-1 p-4 shadow h-[130px] w-[164px] text-white bg-gray-900  border-2 border-pink-900 rounded-lg">
               {/* Add your upper options dropdown content here */}
-              <a href="/services" className="block  hover:text-pink-600 py-1 text-white" target="_blank"></a>
-              <a href="/about" className="block  hover:text-pink-600 py-1 text-white" target="_blank"></a>
-              <a href="/contact" className="block  hover:text-pink-600 py-1 text-white" target="_blank"></a>
+              <a href="/services" className="block  hover:text-pink-600 py-1 text-white" target="_blank" />
+              <a href="/about" className="block  hover:text-pink-600 py-1 text-white" target="_blank" />
+              <a href="/contact" className="block  hover:text-pink-600 py-1 text-white" target="_blank" />
             </div>
           )}
         </div>
