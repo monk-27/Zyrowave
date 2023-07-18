@@ -150,3 +150,35 @@ export const technology1 = [
     url: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.svg',
   },
 ]
+
+
+export const OurTeam = [
+  {
+    name: 'Ritesh Singh',
+    url: 'https://image.lexica.art/full_jpg/db303686-65c8-4dd4-b8e9-6bf51624f036',
+  }, {
+    name: 'Raghav Singh',
+    url: 'https://image.lexica.art/full_jpg/2eb949f8-a0cf-4c94-b163-deae9eb30c7b',
+  },
+  {
+    name: 'Sashi Bhushan Jha',
+    url: 'https://image.lexica.art/full_jpg/5e5a3943-c25b-475c-89f8-28973825164b',
+  },
+  {
+    name: 'Amit Kumar',
+    url: 'https://image.lexica.art/full_jpg/81ea915d-8258-4496-95cf-962912989b2f',
+  },
+  // {
+  //   name: 'Ayush Arya',
+  //   url: 'https://image.lexica.art/full_jpg/9f4d850d-4742-4535-950c-7b89b744916e',
+  // },  
+  {
+    name: 'Himanshu Rawat',
+    url: 'https://image.lexica.art/full_jpg/b0d64e6b-ad73-412e-a563-e634dbb2e8ea',
+  }, 
+  {
+    name: 'Sakshi Thapliyal',
+    url: 'https://image.lexica.art/full_jpg/8f619a86-1a60-4e76-8504-7d3bb6f0ea75',
+  },
+
+]
