@@ -1,27 +1,33 @@
 export const exploreWorlds = [
   {
-    id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'Website Development',
-    description: "Our professional website development services will help you build a successful, engaging website. Our talented developers create unique websites geared for search engines and user experience. We'll help you develop and launch a website that matches your brand and accomplishes your goals. Contact us today to begin."
-  },
-  {
     id: 'world-2',
-    imgUrl: '/planet-02.png',
+    imgUrl: '/Platform.jpg',
     title: 'Platform Development',
     description: "Transform your digital vision into reality with our platform development services. Our team of experts builds scalable and secure platforms tailored to your business needs. Stay ahead of the competition with our cutting-edge technology and agile approach. Let us help you accelerate your growth and achieve your business goals."
   },
   {
+    id: 'world-1',
+    imgUrl: '/webdevlopment.jpg',
+    title: 'Website Development',
+    description: "Our professional website development services will help you build a successful, engaging website. Our talented developers create unique websites geared for search engines and user experience. We'll help you develop and launch a website that matches your brand and accomplishes your goals. Contact us today to begin."
+  },
+  {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
+    imgUrl: '/appdevelopment.jpg',
     title: 'Mobile App Development',
     description: "Our app development services deliver powerful mobile experiences. We design and develop custom iOS and Android mobile apps for your needs. Let us help you bring your app idea to life with cutting-edge technology and user-centric design. Start your mobile app project today by contacting us."
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'UX Design',
+    imgUrl: '/UIUX.jpg',
+    title: 'UI / UX Design',
     description: "UX design allows for the creation of interactive digital experiences. Improve the overall user experience while also boosting your brand's reputation. Design Innovations That Make The User Experience Easier To Navigate Our Expertise Will Help You Raise the Bar of Your Internet Presence."
+  },
+  {
+    id: 'world-5',
+    imgUrl: '/Digital Marketing.jpg',
+    title: 'Digital Marketing',
+    description: "Our app development services deliver powerful mobile experiences. We design and develop custom iOS and Android mobile apps for your needs. Let us help you bring your app idea to life with cutting-edge technology and user-centric design. Start your mobile app project today by contacting us."
   }
 ];
 
