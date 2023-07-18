@@ -63,9 +63,9 @@ const services = () => {
             >
               <div className=" p-8 flex flex-col items-center">
                 <h2 className=" p-8 flex flex-col items-center text-3xl  text-white font-black">
-                  Tailored solutions for your business.
+                  Customized solutions that drive growth and ignite success.
                 </h2>
-                <p className="text-xl text-white flex flex-col items-center">Our custom solutions can help your business reach its full potential. Our team of experts will help you <span> reach your goals by using the latest technology and tailor-made plans.</span></p>
+                <p className="text-xl text-white flex flex-col items-center">Empower your business to soar with our bespoke solutions, unlocking its boundless potential. <span> We blend technology prowess and strategic finesse to craft personalized plans that propel your growth and drive</span>unrivaled success.</p>
               </div>
               <div className="p-8 flex flex-col items-center">
                 {exploreWorlds.map((world, index) => (
@@ -90,9 +90,9 @@ const services = () => {
               <div className=" p-8 flex flex-col items-center ">
                 <div className=" p-8 flex flex-col items-center">
                   <h2 className=" p-8 flex flex-col items-center text-3xl  text-white font-black">
-                    Empowering Your Digital Solutions
+                    Driving Innovation through Powerful Digital Solutions
                   </h2>
-                  <p className="text-xl  text-white">Revolutionize your digital presence with our cutting-edge tech stack. Let us empower your business solutions today.</p>
+                  <p className="text-xl  text-white">Transform your digital landscape with our state-of-the-art technology arsenal. Witness the transformation of your business solutions as we empower you to conquer new horizons.</p>
                 </div>
                 <div className="ml-2 flex flex-row  items-center w-full">
                   {technology.map((world, index) => (
@@ -125,10 +125,10 @@ const services = () => {
             <div className="p-20 flex flex-col items-center">
               <div className="bg-[#253B47] p-20 flex flex-col items-left border-black shadow-md rounded-3xl">
                 <h2 className=" p-8 flex flex-col items-left text-3xl  text-white font-black">
-                  We specialises in custom software development.<br />
-                  We‘re happy to help with your requirements.
+
+                  From web to mobile, databases to software, we make your goals a reality.
                 </h2>
-                <p className="pl-8 text-xl  text-white">Web or mobile app development, database design and management, or any other software project, we<br /> can help you achieve your goals. Please contact us to discuss your project and receive a quote and <br />timeline.</p>
+                <p className="pl-8 text-xl  text-white"> Join us on a software development adventure, turning your ideas into remarkable reality. <br /> Experience the difference of a team that genuinely cares about your success. <br />Contact us now for a quote and let's bring your project to life!</p>
                 <div className="flex flex-col items-left ">
                   <div className="p-8">
 

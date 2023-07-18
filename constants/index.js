@@ -2,39 +2,40 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/Platform.jpg',
-    title: 'Platform Development',
-    description: 'Transform your digital vision into reality with our platform development services. Our team of experts builds scalable and secure platforms tailored to your business needs. Stay ahead of the competition with our cutting-edge technology and agile approach. Let us help you accelerate your growth and achieve your business goals.',
+    title: 'Software Development',
+    description: 'Our software development service is designed to empower your business with cutting-edge technology solutions tailored to your unique needs. With a team of skilled and experienced developers, designers, and project managers, we deliver high-quality software products that drive efficiency, productivity, and innovation.',
   },
   {
     id: 'world-2',
     imgUrl: '/webdevlopment.jpg',
     title: 'Website Development',
-    description: "Our professional website development services will help you build a successful, engaging website. Our talented developers create unique websites geared for search engines and user experience. We'll help you develop and launch a website that matches your brand and accomplishes your goals. Contact us today to begin.",
+    description: 'We offer top-notch web development services to help businesses establish a powerful online presence and achieve their digital objectives. Our dedicated team of web developers, designers, and project managers work tirelessly to deliver exceptional web solutions that are tailored to your specific needs and aligned with your business goals.',
   },
   {
     id: 'world-3',
     imgUrl: '/appdevelopment.jpg',
     title: 'Mobile App Development',
-    description: 'Our app development services deliver powerful mobile experiences. We design and develop custom iOS and Android mobile apps for your needs. Let us help you bring your app idea to life with cutting-edge technology and user-centric design. Start your mobile app project today by contacting us.',
+    description: 'A leading provider of comprehensive app development services designed to bring your innovative ideas to life and cater to your specific business needs. Our team of skilled app developers, designers, and project managers is dedicated to delivering high-quality mobile applications that drive growth, enhance user experiences, and propel your business forward in the competitive digital landscape.',
   },
   {
     id: 'world-4',
     imgUrl: '/UIUX.jpg',
     title: 'UI / UX Design',
-    description: "UX design allows for the creation of interactive digital experiences. Improve the overall user experience while also boosting your brand's reputation. Design Innovations That Make The User Experience Easier To Navigate Our Expertise Will Help You Raise the Bar of Your Internet Presence.",
+    description: 'We specialize in providing top-notch UI/UX design services to create visually stunning and user-friendly interfaces that enhance the overall user experience. Our dedicated team of UI/UX designers and researchers are committed to crafting intuitive and engaging designs that align perfectly with your brand, drive user satisfaction, and maximize your business&#39;s success.',
   },
   {
     id: 'world-5',
     imgUrl: '/Digital Marketing.jpg',
     title: 'Digital Marketing',
-    description: 'Our app development services deliver powerful mobile experiences. We design and develop custom iOS and Android mobile apps for your needs. Let us help you bring your app idea to life with cutting-edge technology and user-centric design. Start your mobile app project today by contacting us.',
+    description: 'We offer a comprehensive range of digital marketing services to help your business thrive in the digital world. Our team of skilled digital marketers, strategists, and analysts is dedicated to driving results, maximizing your online visibility, and enhancing your brand&#39;s presence across various digital channels.',
   },
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'End-to-End Solutions',
+  'Innovation and Expertise',
+  'Customized Approach',
+  'Measurable Results',
 ];
 
 export const newFeatures = [

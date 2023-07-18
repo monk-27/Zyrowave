@@ -20,18 +20,20 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal  sm:text-[32px] text-[20px] text-center text-secondary-white "
       >
-        <span className="font-extrabold text-white">TechBotics </span>
-        is a new thing in the future, where you can enjoy the virtual
-        world by feeling like it's really, you can feel what you feel in this
-        metaverse world, because this is really the
-        <span className="font-extrabold text-white"> madness of the metaverse</span>
-        of today, using only
-        <span className="font-extrabold text-white">VR</span>
-        devices you ca easily explore the metaverse world
-        you want, turn your dreams into reality. Let's
-        <span className="font-extrabold text-white"> explore </span>
-        the madness of
-        the metaverse by scrolling down.
+        <span className="font-extrabold text-white">TechBotics, </span>
+        your one-stop software company that brings together a talented
+        team of experts to provide a comprehensive suite of
+        <span className="font-extrabold text-white"> technology solutions, including cutting-
+          edge software development and dynamic digital marketing services.
+        </span>
+        We are passionate
+        about leveraging the power of technology
+        <span className="font-extrabold text-white"> to drive growth and success </span>
+        for businesses of
+        <span className="font-extrabold text-white"> all
+          sizes and industries.
+        </span>
+
       </motion.p>
       <motion.img
         variants={fadeIn('up', 'tween')}
