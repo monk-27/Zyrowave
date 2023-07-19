@@ -9,10 +9,10 @@ const Contact = () => (
   <div className="bg-primary-black min-h-screen flex flex-col">
     <Navbar />
 
-    <div className="flex flex-col items-center justify-center flex-grow md:flex-row">
+    <div className="flex flex-col items-center justify-center flex-grow md:flex-row container">
       <div className="w-full">
-        <div className="max-w-md mx-auto bg-primary-black overflow-hidden shadow-lg rounded-lg px-8 py-6 mb-8
-        transition-all duration-300 hover:shadow-md hover:bg-[#253B47] hover:text-white transform hover:scale-105 md:transform-none "
+        <div className="max-w-md mx-auto bg-[#253B47] overflow-hidden shadow-lg rounded-lg px-8 py-6 mb-8
+        transition-all duration-300 hover:shadow-md "
         >
           <h1 className="text-white text-4xl font-extrabold">Get in Touch with Us Today.</h1>
           <br />
@@ -52,8 +52,8 @@ const Contact = () => (
       </div>
       <div className="w-full">
         <div className="max-w-auto mx-auto bg-[#253B47]
-         hover:bg-gray-900  transition-all duration-300 rounded-lg px-8
-         py-6 mx-2 md:mx-0 md:mr-4 shadow-lg transform hover:scale-105 md:transform-none "
+         rounded-lg px-8
+         py-6 mx-2 md:mx-0 md:mr-4 shadow-lg  "
         >
           <h1 className="text-white">
             Ready to Discuss? Fill Out Our Contact Form

@@ -10,7 +10,7 @@ import { exploreWorlds, technology } from '../../constants';
 
 const services = () => {
   const Card = ({ world }) => (
-    <div className={`${styles.servicescard} transform transition-transform hover:scale-100`}>
+    <div className={`${styles.servicescard} transform transition-transform hover:scale-100 `}>
       <div className="h-full w-full p-4">
         <img
           src={world.imgUrl}

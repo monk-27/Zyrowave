@@ -40,7 +40,7 @@ const about = () => {
         />
       </div>
       <div className="justify-between p-4 leading-normal">
-        <h2 className="text-l tracking-tight text-gray-900 shadow-2xl dark:text-white">{techno.name}</h2>
+        <h2 className="text-l tracking-tight text-white shadow-2xl dark:text-white">{techno.name}</h2>
       </div>
     </div>
     );
@@ -48,7 +48,7 @@ const about = () => {
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
-      <div className="px-4 lg:px-12">
+      <div className="px-4 lg:px-12 container">
 
         {/* Text part in About Us */}
         <section className={`${styles.paddings}`} id="explore">
