@@ -14,12 +14,10 @@ const Contact = () => (
         <div className="max-w-md mx-auto bg-[#253B47] overflow-hidden shadow-lg rounded-lg px-8 py-6 mb-8
         transition-all duration-300 hover:shadow-md "
         >
-          <h1 className="text-white text-4xl font-extrabold">Get in Touch with Us Today.</h1>
+          <h1 className="text-white text-4xl font-extrabold">Contact Us for a Personalized Solution to Suit Your Needs.</h1>
           <br />
           <span className="text-white text-lg">
-            Our team is here to help you make your ideas happen and come up with
-            solutions that will help your business grow. Contact us right away
-            to set up a meeting with one of our experts.
+            Don't Delay Your Business's Success. Contact Us to Arrange a Meeting Today.
           </span>
           <br />
           <br />
@@ -112,7 +110,7 @@ const Contact = () => (
             <div className="flex items-center">
               <input type="checkbox" id="checkbox" className="mr-2" />
               <label htmlFor="checkbox" className="text-white">
-                I agree to the terms and conditions
+                Save my Information to contact me.
               </label>
             </div>
           </div>
