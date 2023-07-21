@@ -106,16 +106,6 @@ const services = () => {
                     </motion.nav>
                   ))}
                 </div>
-                {/* <div className="ml-2 flex flex-row items-center bg-blue-900 w-full">
-                                {technology1.map((world, index) => (
-                                    <motion.div
-                                        key={index}
-                                    >
-                                        <TechnoCard techno={world} />
-                                    </motion.div>
-                                ))}
-                            </div> */}
-
               </div>
 
             </section>

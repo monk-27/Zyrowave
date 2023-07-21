@@ -12,9 +12,7 @@ import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { href: currentUrl, pathname } = useUrl() ?? {};
-
-  console.log('line 15 ------>', currentUrl, '------>', pathname);
+  const { href: pathname } = useUrl() ?? {};
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
