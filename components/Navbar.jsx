@@ -45,11 +45,11 @@ const Navbar = () => {
             </svg>
           </div>
           {isMenuOpen && (
-            <div className="absolute top-full left-10/2 transform -translate-x-1/2 mt-1 p-4 shadow h-[130px] w-[164px] text-white bg-gray-900  border-2 border-pink-900 rounded-lg">
+            <div className="absolute top-full left-10/2 transform -translate-x-1/2 mt-1 p-4 shadow h-[130px] w-[125px] text-white bg-gray-900  border-2 border-pink-900 rounded-lg mb-96">
               {/* Add your upper options dropdown content here */}
-              <a href="/services" className="block  hover:text-pink-600 py-1 text-white" target="_blank" />
-              <a href="/about" className="block  hover:text-pink-600 py-1 text-white" target="_blank" />
-              <a href="/contact" className="block  hover:text-pink-600 py-1 text-white" target="_blank" />
+              <a href="/services" className="block  hover:text-pink-600 py-1 text-white" target="_blank">Services</a>
+              <a href="/about" className="block  hover:text-pink-600 py-1 text-white" target="_blank">About Us</a>
+              <a href="/contact" className="block  hover:text-pink-600 py-1 text-white" target="_blank">Contact Us</a>
             </div>
           )}
         </div>

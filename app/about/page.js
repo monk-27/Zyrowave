@@ -40,7 +40,7 @@ const about = () => {
         />
       </div>
       <div className="justify-between p-4 leading-normal">
-        <h2 className="text-l tracking-tight text-white shadow-2xl dark:text-white">{techno.name}</h2>
+        <h2 className="text-l tracking-tight text-gray-900 shadow-2xl dark:text-white">{techno.name}</h2>
       </div>
     </div>
     );
@@ -48,136 +48,146 @@ const about = () => {
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
-      <div className="px-4 lg:px-12 container">
+      <div className="px-4 lg:px-12 global-content">
 
         {/* Text part in About Us */}
         <section className={`${styles.paddings}`} id="explore">
-          <div className="p-4 lg:p-8 flex flex-col lg:flex-row items-center lg:items-left">
-            <div className="ml-48 lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
-              <h2 className="mb-4 w-full text-3xl text-white font-black text-center lg:text-left">
+          <div className="mt-[-40px] p-6 lg:p-8 flex flex-col-reverse lg:flex-row items-center lg:items-left">
+            <div className="lg:mr-12 w-full lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
+              <h2 className="mb-4 text-xl lg:text-4xl xl:text-5xl text-white font-black text-center lg:text-left">
                 Who we are, what we do, and our uniqueness.
               </h2>
-              <p className="text-xl text-white text-center lg:text-left">
+              <p className="text-md lg:text-2xl xl:text-3xl text-white text-center lg:text-left">
                 Our comprehensive IT solutions are tailored to your company's requirements. We handle everything from web development to mobile app development.
               </p>
             </div>
-            <div className="lg:w-1/2 flex flex-col items-center">
+            <div className="w-full lg:w-1/2 flex flex-col items-center">
               <img
                 src="/ayush logo.png"
                 alt="planet-01"
-                className="md:w-[430px] w-full h-[450px] rounded-[32px] object-cover"
+                className="w-full h-auto max-w-[430px] lg:max-w-full rounded-[32px] object-cover"
               />
             </div>
           </div>
+
         </section>
 
         {/* Our Core Approach section */}
         <section className={`${styles.paddings}`} id="explore">
           <div className="p-4 lg:p-8 flex flex-col items-center">
-            <div className="p-4 lg:w-3/5 flex flex-col items-center">
-              <h2 className="mb-4 w-full text-3xl text-white font-black text-center">
+            <div className="p-4 flex flex-col items-center w-full">
+              <h2 className="mb-4 w-full text-2xl lg:text-3xl text-white font-black text-center">
                 Our Core Approach
               </h2>
-              <p className="text-xl text-white text-center">
+              <span className="mb-2 w-full text-2xl lg:text-3xl text-white font-black text-center border-b-2 mt-[-30px] text-transparent">Our Core Approach</span>
+              <p className="text-lg lg:text-xl text-white text-center">
                 {msg}
               </p>
-              <div className="p-4 lg:w-3/5 flex justify-center items-center  mt-8">
-                <div className="flex justify-center items-center flex-col ml-8 " onClick={() => { selectApproach(1); }}>
+              <div className="p-4 lg:w-3/5 flex flex-wrap justify-center items-center mt-8">
+                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(1); }}>
                   <img
                     src="/light-bulb.png"
                     alt="planet-01"
-                    className="md:w-[80px] w-full h-[80px] rounded-[32px] object-cover"
+                    className="w-[80px] h-[80px] rounded-[32px] object-cover"
                   />
-                  <p className="mt-2 text-xl text-white text-center lg:text-center">
+                  <p className="mt-2 text-sm lg:text-lg text-white text-center">
                     Concept
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col ml-8 " onClick={() => { selectApproach(2); }}>
+                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(2); }}>
                   <img
                     src="/exploration.png"
                     alt="planet-01"
-                    className="md:w-[80px] w-full h-[80px] rounded-[2px] object-cover"
+                    className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
-                  <p className=" mt-2 text-xl text-white text-center lg:text-center">
+                  <p className="mt-2 text-sm lg:text-lg text-white text-center">
                     Analysis
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col ml-8" onClick={() => { selectApproach(3); }}>
+                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(3); }}>
                   <img
                     src="/coding.png"
                     alt="planet-01"
-                    className="md:w-[80px] w-full h-[80px] rounded-[10px] object-cover"
+                    className="w-[80px] h-[80px] rounded-[10px] object-cover"
                   />
-                  <p className="mt-2 text-xl text-white text-center lg:text-center">
+                  <p className="mt-2 text-sm lg:text-lg text-white text-center">
                     Development
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col ml-8" onClick={() => { selectApproach(4); }}>
+                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(4); }}>
                   <img
                     src="/test.png"
                     alt="planet-01"
-                    className="md:w-[80px] w-full h-[80px] rounded-[2px] object-cover"
+                    className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
-                  <p className="mt-2 text-xl text-white text-center lg:text-center">
+                  <p className="mt-2 text-sm lg:text-lg text-white text-center">
                     Testing
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col ml-8" onClick={() => { selectApproach(5); }}>
+                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(5); }}>
                   <img
                     src="/task.png"
                     alt="planet-01"
-                    className="md:w-[80px] w-full h-[80px] rounded-[2px] object-cover"
+                    className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
-                  <p className="mt-2 text-xl text-white text-center lg:text-center">
+                  <p className="mt-2 text-sm lg:text-lg text-white text-center">
                     Finalize
                   </p>
                 </div>
               </div>
+
             </div>
           </div>
+
         </section>
 
         {/* Mission and Vision section */}
         <section className={`${styles.paddingss}`} id="explore">
           <div className="p-4 lg:p-8 flex flex-col lg:flex-row items-center lg:items-left">
             <div className="lg:w-1/2 flex flex-col items-center">
-              <span className="mb-10 w-48 text-3xl text-white font-black text-center border-b-2 border-white">Our Mission</span>
+              <span className="mb-4 lg:mb-10 w-48 text-2xl lg:text-3xl text-white font-black text-center border-b-2 border-white">
+                Our Mission
+              </span>
               <img
                 src="https://img.freepik.com/free-vector/realistic-objective-background_79603-1821.jpg?w=1380&t=st=1689683066~exp=1689683666~hmac=e9d55a612d5411c1be02eb6ef84c55ac3c99bd8ff184f1d1b7c9fe1f75cc665d"
                 alt="planet-01"
-                className="md:w-[500px] w-full h-[300px] rounded-[32px] object-cover"
+                className="md:w-[400px] lg:w-[500px] w-full h-[300px] rounded-[32px] object-cover"
               />
             </div>
-            <div className="mr-4 lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
-              <h2 className="mb-4 w-full text-3xl text-white font-black text-center lg:text-left">
+            <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
+              <h2 className="mb-4 w-full text-xl lg:text-3xl text-white font-black text-center lg:text-left">
                 Our Mission
               </h2>
-              <p className="text-xl text-white text-center lg:text-left">
+              <p className="text-md lg:text-xl text-white text-center lg:text-left">
                 At Techbotics, our mission is simple yet ambitious - to be your trusted partner in the digital realm. We aim to empower businesses with innovative software solutions and strategic digital marketing services that not only meet their unique needs but also exceed their expectations. We handle everything from web development to mobile app development.
               </p>
             </div>
           </div>
+
         </section>
 
         <section className={`${styles.paddingss}`} id="explore">
           <div className="p-4 lg:p-8 flex flex-col lg:flex-row items-center lg:items-left">
-            <div className="ml-48 lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
-              <h2 className="mb-4 w-full text-3xl text-white font-black text-center lg:text-left">
+            <div className="lg:ml-16 lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
+              <h2 className="mb-4 w-full text-xl lg:text-3xl text-white font-black text-center lg:text-left">
                 Our Vision
               </h2>
-              <p className="text-xl text-white text-center lg:text-left">
+              <p className="text-md lg:text-xl text-white text-center lg:text-left">
                 At Techbotics, our mission is simple yet ambitious - to be your trusted partner in the digital realm. We aim to empower businesses with innovative software solutions and strategic digital marketing services that not only meet their unique needs but also exceed their expectations. We handle everything from web development to mobile app development.
               </p>
             </div>
-            <div className="ml-4 lg:w-1/2 flex flex-col items-center">
-              <span className="mb-10 w-48 text-3xl text-white font-black text-center border-b-2 border-white">Our Vision</span>
+            <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center">
+              <span className="mb-4 lg:mb-10 w-32 lg:w-48 text-xl lg:text-3xl text-white font-black text-center border-b-2 border-white">
+                Our Vision
+              </span>
               <img
                 src="https://img.freepik.com/free-vector/businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-franchising-distribution-concept-white-background_335657-2028.jpg?w=1380&t=st=1689683232~exp=1689683832~hmac=02a2370761562a362479bf489aefe09bfb90e60c9944cc04cedc9ef4ea8cffd2"
                 alt="planet-01"
-                className="md:w-[500px] w-full h-[300px] rounded-[32px] object-cover"
+                className="md:w-[400px] lg:w-[500px] w-full h-[300px] rounded-[32px] object-cover"
               />
             </div>
           </div>
+
         </section>
 
         {/* Our Team section */}
