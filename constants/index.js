@@ -93,7 +93,6 @@ export const socials = [
   },
 ];
 
-// technolgy apidata
 export const technology = [
   {
     name: 'JavaScript',
