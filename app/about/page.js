@@ -7,23 +7,35 @@ import styles from '../../styles';
 import { OurTeam } from '../../constants';
 
 const about = () => {
-  const [msg, setMsg] = useState('We deliver reliable and high-performance products to our clients so that they can take their businesses to the next level with a high growth rate.');
+  const [msg, setMsg] = useState(
+    'We deliver reliable and high-performance products to our clients so that they can take their businesses to the next level with a high growth rate.',
+  );
   const selectApproach = (approach) => {
     switch (approach) {
       case 1:
-        setMsg('We deliver reliable and high-performance products to our clients so that they can take their businesses to the next level with a high growth rate.');
+        setMsg(
+          'We kickstart our journey by immersing ourselves in your vision and goals. Through creative brainstorming and thoughtful discussions, we conceive inspired concepts that lay the groundwork for your project.',
+        );
         break;
       case 2:
-        setMsg('We thoroughly research all projects helping our team to better understand your target markets & target audience and online marketing needs.');
+        setMsg(
+          'Before we embark on development, we conduct a thorough analysis to ensure our ideas align with your needs. Our team crafts a strategic blueprint, outlining a well-defined roadmap for seamless project execution.',
+        );
         break;
       case 3:
-        setMsg('We can design and build customized solutions, develop the functionality that keeps your users engaged, set up content management systems, and even handle website hosting and maintenance for your website.');
+        setMsg(
+          'Our skilled developers, designers, and marketers collaborate to bring your vision to life. From web and app development to software solutions and captivating UI/UX design, we infuse brilliance into every facet of your project.',
+        );
         break;
       case 4:
-        setMsg('We use modern testing technologies in order to thoroughly test the developed products. We believe in achieving a more specific execution of your requirements from the system.');
+        setMsg(
+          ' We leave no room for errors. Our rigorous testing process meticulously assesses every detail to ensure flawless performance and functionality. This ensures that your end-product is polished and seamless.',
+        );
         break;
       case 5:
-        setMsg('We deliver reliable and high-performance products to our clients so that they can take their businesses to the next level with a high growth rate.');
+        setMsg(
+          'The culmination of our efforts results in the unveiling of your masterpiece. With utmost care, we finalize and deliver your project, ready to make a lasting impact on your audience. Your success becomes our success as we witness excellence unfold.',
+        );
         break;
       default:
         break;
@@ -40,105 +52,171 @@ const about = () => {
         />
       </div>
       <div className="justify-between p-4 leading-normal">
-        <h2 className="text-l tracking-tight text-gray-900 shadow-2xl dark:text-white">{techno.name}</h2>
+        <h2 className="text-l tracking-tight text-gray-900 shadow-2xl dark:text-white">
+          {techno.name}
+        </h2>
       </div>
     </div>
-    );
+  );
 
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
-      <div className="px-4 lg:px-12 global-content">
-
+      <div className="px-4 lg:px-10 global-content">
         {/* Text part in About Us */}
-        <section className={`${styles.paddings}`} id="explore">
-          <div className="mt-[-40px] p-6 lg:p-8 flex flex-col-reverse lg:flex-row items-center lg:items-left">
-            <div className="lg:mr-12 w-full lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
-              <h2 className="mb-4 text-xl lg:text-4xl xl:text-5xl text-white font-black text-center lg:text-left">
-                Who we are, what we do, and our uniqueness.
-              </h2>
-              <p className="text-md lg:text-2xl xl:text-3xl text-white text-center lg:text-left">
-                Our comprehensive IT solutions are tailored to your company's requirements. We handle everything from web development to mobile app development.
+        <section className={`${styles.paddings} mb-12`} id="explore">
+          <h2 className="mt-1 mx-auto text-xl lg:text-4xl xl:text-5xl text-white font-black text-center p-4 border-b-2 border-white">
+            Why choose us ?
+          </h2>
+
+          <div className="mt-5 md:flex items-center justify-center">
+            <div className="md:w-1/2  md:max-w-[600px] md:mr-12 flex flex-col items-center md:items-start md:text-left">
+              <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
+                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                  End-to-End Solutions :
+                </span>
+                <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
+                  Techbotics is your one-stop destination for all things
+                  tech-related. From software development to digital marketing,
+                  we offer end-to-end solutions that cover every aspect of your
+                  digital journey.
+                </span>
+              </p>
+              <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
+                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                  Innovation and Expertise:
+                </span>
+                <span className="md:text-base sm:text-2xl text-white text-center font-bold">
+                  Our team thrives on innovation and continuously seeks ways to
+                  push boundaries. With deep expertise in the latest
+                  technologies, we stay at the forefront of industry trends to
+                  deliver solutions that are both innovative and effective.
+                </span>
+              </p>
+              <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
+                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                  Collaborative Partnership:
+                </span>
+                <span className="md:text-base sm:text-2xl text-white text-center font-bold">
+                  We believe in fostering strong, collaborative relationships
+                  with our clients. Through open communication and regular
+                  updates, we ensure that you are actively involved in the
+                  entire development and marketing process.
+                </span>
+              </p>
+              <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
+                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                  Customer-Centric Support:
+                </span>
+                <span className="md:text-base sm:text-2xl text-white text-center font-bold">
+                  At Techbotics, your satisfaction is our top priority. Our
+                  dedicated support team is always ready to address any queries
+                  or issues, ensuring that you receive exceptional customer
+                  service at every step.
+                </span>
               </p>
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col items-center">
+
+            <div className="md:w-1/2 flex justify-center mt-5 md:mt-0 md:bg-transparent ">
               <img
-                src="/ayush logo.png"
+                src="/choose.gif"
                 alt="planet-01"
-                className="w-full h-auto max-w-[430px] lg:max-w-full rounded-[32px] object-cover"
+                className="w-full h-auto max-w-[600px] md:max-w-half rounded-[32px] object-cover md:bg-transparent "
               />
             </div>
           </div>
-
         </section>
 
         {/* Our Core Approach section */}
-        <section className={`${styles.paddings}`} id="explore">
+        <section className={`${styles.paddings} `} id="explore">
           <div className="p-4 lg:p-8 flex flex-col items-center">
             <div className="p-4 flex flex-col items-center w-full">
-              <h2 className="mb-4 w-full text-2xl lg:text-3xl text-white font-black text-center">
+              <h2 className="mt-12 mb-4 w-full text-2xl lg:text-3xl text-white font-black text-center">
                 Our Core Approach
               </h2>
-              <span className="mb-2 w-full text-2xl lg:text-3xl text-white font-black text-center border-b-2 mt-[-30px] text-transparent">Our Core Approach</span>
-              <p className="text-lg lg:text-xl text-white text-center">
-                {msg}
-              </p>
+              <span className="mb-2 w-full text-2xl lg:text-3xl text-white font-black text-center border-b-2 mt-[-30px] text-transparent">
+                Our Core Approach
+              </span>
+              <p className="text-lg lg:text-xl text-white text-center">{msg}</p>
               <div className="p-4 lg:w-3/5 flex flex-wrap justify-center items-center mt-8">
-                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(1); }}>
+                <div
+                  className="flex justify-center items-center flex-col m-2 lg:m-4"
+                  onClick={() => {
+                    selectApproach(1);
+                  }}
+                >
                   <img
-                    src="/light-bulb.png"
+                    src="/idea.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[32px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Concept
+                    Inspired Ideation
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(2); }}>
+                <div
+                  className="flex justify-center items-center flex-col m-2 lg:m-4"
+                  onClick={() => {
+                    selectApproach(2);
+                  }}
+                >
                   <img
-                    src="/exploration.png"
+                    src="/diagram.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Analysis
+                    Strategic Blueprint
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(3); }}>
+                <div
+                  className="flex justify-center items-center flex-col m-2 lg:m-4"
+                  onClick={() => {
+                    selectApproach(3);
+                  }}
+                >
                   <img
-                    src="/coding.png"
+                    src="/coding.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[10px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Development
+                    Crafting Brilliance
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(4); }}>
+                <div
+                  className="flex justify-center items-center flex-col m-2 lg:m-4"
+                  onClick={() => {
+                    selectApproach(4);
+                  }}
+                >
                   <img
-                    src="/test.png"
+                    src="/report.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Testing
+                    Precision Testing
                   </p>
                 </div>
-                <div className="flex justify-center items-center flex-col m-2 lg:m-4" onClick={() => { selectApproach(5); }}>
+                <div
+                  className="flex justify-center items-center flex-col m-2 lg:m-4"
+                  onClick={() => {
+                    selectApproach(5);
+                  }}
+                >
                   <img
-                    src="/task.png"
+                    src="/rocket.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Finalize
+                    Excellence Unveiled
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </section>
 
         {/* Mission and Vision section */}
@@ -159,11 +237,14 @@ const about = () => {
                 Our Mission
               </h2>
               <p className="text-md lg:text-xl text-white text-center lg:text-left">
-                At Techbotics, our mission is simple yet ambitious - to be your trusted partner in the digital realm. We aim to empower businesses with innovative software solutions and strategic digital marketing services that not only meet their unique needs but also exceed their expectations. We handle everything from web development to mobile app development.
+                At Techbotics, we are driven by a simple yet ambitious mission to become your reliable and valued partner in the digital realm. Our goal is to empower businesses with cutting-edge software solutions and strategic digital marketing services that not only cater to their distinct requirements but also go above and beyond their expectations.
+
+                With a strong focus on innovation and expertise, we pride ourselves on staying at the forefront of technological advancements to provide you with state-of-the-art web and mobile app development services. Our dedicated team works collaboratively with you, fostering a  collaborative partnership throughout the entire development and marketing process.
+
+                Customer satisfaction is at the core of everything we do.  At Techbotics, we are committed to delivering excellence, enabling your business to thrive in the digital landscape and achieve unparalleled success.
               </p>
             </div>
           </div>
-
         </section>
 
         <section className={`${styles.paddingss}`} id="explore">
@@ -173,7 +254,12 @@ const about = () => {
                 Our Vision
               </h2>
               <p className="text-md lg:text-xl text-white text-center lg:text-left">
-                At Techbotics, our mission is simple yet ambitious - to be your trusted partner in the digital realm. We aim to empower businesses with innovative software solutions and strategic digital marketing services that not only meet their unique needs but also exceed their expectations. We handle everything from web development to mobile app development.
+                At Techbotics, our vision is to be a trailblazing force in the realm of technology and digital innovation, driving positive change for businesses and individuals alike. We envision a future where cutting-edge software solutions and dynamic digital marketing strategies come together seamlessly, empowering businesses to thrive in the rapidly evolving digital landscape.
+
+                As a trusted partner, we will relentlessly pursue the development of state-of-the-art web and mobile applications, ensuring they cater to your specific needs and goals.
+
+                At the heart of our vision is a passion for empowering businesses to reach their full potential.
+                Together, we look forward to shaping a future where technology and innovation drive transformative outcomes, making a positive impact on businesses and individuals worldwide.
               </p>
             </div>
             <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center">
@@ -187,7 +273,6 @@ const about = () => {
               />
             </div>
           </div>
-
         </section>
 
         {/* Our Team section */}
@@ -197,7 +282,8 @@ const about = () => {
               Our Team
             </h2>
             <p className="text-xl text-white text-center">
-              We're successful because of "Our Team." Our talented and diverse team works together to deliver excellent results for our clients.
+              We're successful because of "Our Team." Our talented and diverse
+              team works together to deliver excellent results for our clients.
             </p>
           </div>
           <div className="mt-8 w-full">
@@ -211,7 +297,7 @@ const about = () => {
                 >
                   <TechnoCard techno={world} />
                 </motion.nav>
-                ))}
+              ))}
             </div>
           </div>
         </section>

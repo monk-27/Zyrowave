@@ -10,7 +10,9 @@ import { exploreWorlds, technology } from '../../constants';
 
 const services = () => {
   const Card = ({ world }) => (
-    <div className={`${styles.servicescard} transform transition-transform hover:scale-100 `}>
+    <div
+      className={`${styles.servicescard} transform transition-transform hover:scale-100 `}
+    >
       <div className="h-full w-full p-4">
         <img
           src={world.imgUrl}
@@ -20,14 +22,15 @@ const services = () => {
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <h2 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white relative pb-2">
-          {world.title}<br />
+          {world.title}
+          <br />
           <span className="glowing-underline" />
         </h2>
-        <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400">{world.description}</p>
+        <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400">
+          {world.description}
+        </p>
       </div>
-
     </div>
-
   );
   const TechnoCard = ({ techno }) => (
     <div className="m-2 p-1 flex flex-col items-center ">
@@ -40,10 +43,11 @@ const services = () => {
       </div>
 
       <div className="justify-between p-4 leading-normal">
-        <h2 className="text-l tracking-tight shadow-2xl text-white">{techno.name}</h2>
+        <h2 className="text-l tracking-tight shadow-2xl text-white">
+          {techno.name}
+        </h2>
       </div>
     </div>
-
   );
   return (
     <>
@@ -52,7 +56,6 @@ const services = () => {
         <Navbar />
         {/* every thing do in this div  */}
         <div className="justify-center items-center">
-
           <section className={`${styles.paddings}`} id="explore">
             <motion.div
               variants={staggerContainer}
@@ -65,14 +68,20 @@ const services = () => {
                 <h2 className=" p-8 flex flex-col items-center text-3xl  text-white font-black">
                   Customized solutions that drive growth and ignite success.
                 </h2>
-                <p className="text-xl text-white flex flex-col items-center">Empower your business to soar with our bespoke solutions, unlocking its boundless potential. <span> We blend technology prowess and strategic finesse to craft personalized plans that propel your growth and drive</span>unrivaled success.</p>
+                <p className="text-xl text-white flex flex-col items-center">
+                  Empower your business to soar with our bespoke solutions,
+                  unlocking its boundless potential.{' '}
+                  <span>
+                    {' '}
+                    We blend technology prowess and strategic finesse to craft
+                    personalized plans that propel your growth and drive
+                  </span>
+                  unrivaled success.
+                </p>
               </div>
               <div className="p-8 flex flex-col items-center">
                 {exploreWorlds.map((world, index) => (
-                  <motion.div
-                    key={index}
-                    whileHover={{ scale: 1.1 }}
-                  >
+                  <motion.div key={index} whileHover={{ scale: 1.1 }}>
                     <motion.div
                       variants={fadeIn('up', 'tween', 0.1, 1)}
                       className="relative w-full md:-mt-[20px] -mt-[12px]"
@@ -92,7 +101,12 @@ const services = () => {
                   <h2 className=" p-8 flex flex-col items-center text-3xl  text-white font-black">
                     Driving Innovation through Powerful Digital Solutions
                   </h2>
-                  <p className="text-xl  text-white">Transform your digital landscape with our state-of-the-art technology arsenal. Witness the transformation of your business solutions as we empower you to conquer new horizons.</p>
+                  <p className="text-xl  text-white">
+                    Transform your digital landscape with our state-of-the-art
+                    technology arsenal. Witness the transformation of your
+                    business solutions as we empower you to conquer new
+                    horizons.
+                  </p>
                 </div>
                 <div className="ml-2 flex flex-row  items-center w-full">
                   {technology.map((world, index) => (
@@ -107,7 +121,6 @@ const services = () => {
                   ))}
                 </div>
               </div>
-
             </section>
           </div>
           {/* contact redirect page  */}
@@ -115,27 +128,46 @@ const services = () => {
             <div className="p-20 flex flex-col items-center">
               <div className="bg-[#253B47] p-20 flex flex-col items-left border-black shadow-md rounded-3xl">
                 <h2 className=" p-8 flex flex-col items-left text-3xl  text-white font-black">
-
-                  From web to mobile, databases to software, we make your goals a reality.
+                  From web to mobile, databases to software, we make your goals
+                  a reality.
                 </h2>
-                <p className="pl-8 text-xl  text-white"> Join us on a software development adventure, turning your ideas into remarkable reality. <br /> Experience the difference of a team that genuinely cares about your success. <br />Contact us now for a quote and let's bring your project to life!</p>
+                <p className="pl-8 text-xl  text-white">
+                  {' '}
+                  Join us on a software development adventure, turning your
+                  ideas into remarkable reality. <br /> Experience the
+                  difference of a team that genuinely cares about your success.{' '}
+                  <br />
+                  Contact us now for a quote and let's bring your project to
+                  life!
+                </p>
                 <div className="flex flex-col items-left ">
                   <div className="p-8">
-
-                    <a href="/contact"><button className={`${styles.hellobutton}`}>Say Hello<span className="ml-2 h-5 w-5 mb-1 animate-shakehand" aria-hidden="true">👋</span></button></a>
-                    <a href="/services"><button className="border-2 border-blue-900 ml-6 bg-white font-medium text-blue-900 px-4 py-2 rounded">Learn More →</button></a>
+                    <a href="/contact">
+                      <button className={`${styles.hellobutton}`}>
+                        Say Hello
+                        <span
+                          className="ml-2 h-5 w-5 mb-1 animate-shakehand"
+                          aria-hidden="true"
+                        >
+                          👋
+                        </span>
+                      </button>
+                    </a>
+                    <a href="/services">
+                      <button className="border-2 border-blue-900 ml-6 bg-white font-medium text-blue-900 px-4 py-2 rounded">
+                        Learn More →
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
         </div>
 
         <div className="w-full h-72 mx-auto flex justify-center text-white text-lg font-bold pb-5">
           <Footer />
         </div>
-
       </div>
     </>
   );

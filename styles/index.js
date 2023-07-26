@@ -2,7 +2,7 @@ const styles = {
   innerWidth: '2xl:max-w-[1280px] w-full',
   interWidth: 'lg:w-[80%] w-[100%]',
 
-  paddings: 'sm:p-16 xs:p-8 px-6 py-12',
+  paddings: 'sm:p-12 xs:p-8 px-6 py-8',
   paddingss: 'sm:p-2 xs:p-1 px-2 py-2',
 
   yPaddings: 'sm:py-16 xs:py-8 py-12',
@@ -26,6 +26,10 @@ const styles = {
 
   // services page
   hellobutton: 'bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-all duration-200 transform ease-in-out  hover:scale-[1.02] hover:shadow-lg hover:-translate-y-1  bg-blue-600 text-white hover:bg-blue-700 cursor-pointer  md:inline-flex items-center ',
+
+  // home page
+  explorebutton: 'mt-10 bg-yellow-600  hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transition-all duration-200 transform ease-in-out hover:scale-[1.02] hover:shadow-lg hover:-translate-y-1 bg-blue-600 text-white hover:bg-blue-700 cursor-pointer md:inline-flex items-center',
+
 };
 
 export default styles;

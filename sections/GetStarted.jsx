@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+
 'use client';
 
 import { motion } from 'framer-motion';
@@ -21,9 +23,9 @@ const GetStarted = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="/get-started.png"
+          src="/why.gif"
           alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[90%] h-[80%] rounded-full"
         />
       </motion.div>
       <motion.div
@@ -41,8 +43,21 @@ const GetStarted = () => (
             />
           ))}
         </div>
+        <a href="/about">
+          <button className={`${styles.explorebutton}`}>
+            Explore More
+            <span
+              className="ml-2 h-5 w-5 mb-1 animate-shakehand"
+              aria-hidden="true"
+            >
+              👋
+            </span>
+          </button>
+        </a>
       </motion.div>
+
     </motion.div>
+
   </section>
 );
 
