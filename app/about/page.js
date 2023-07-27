@@ -223,13 +223,11 @@ const about = () => {
         <section className={`${styles.paddingss}`} id="explore">
           <div className="p-4 lg:p-8 flex flex-col lg:flex-row items-center lg:items-left">
             <div className="lg:w-1/2 flex flex-col items-center">
-              <span className="mb-4 lg:mb-10 w-48 text-2xl lg:text-3xl text-white font-black text-center border-b-2 border-white">
-                Our Mission
-              </span>
+             
               <img
-                src="https://img.freepik.com/free-vector/realistic-objective-background_79603-1821.jpg?w=1380&t=st=1689683066~exp=1689683666~hmac=e9d55a612d5411c1be02eb6ef84c55ac3c99bd8ff184f1d1b7c9fe1f75cc665d"
+                src="/mission.png"
                 alt="planet-01"
-                className="md:w-[400px] lg:w-[500px] w-full h-[300px] rounded-[32px] object-cover"
+                className="h-auto sm:h-96"
               />
             </div>
             <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center lg:items-left lg:justify-center mb-8 lg:mb-0">
@@ -263,44 +261,17 @@ const about = () => {
               </p>
             </div>
             <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center">
-              <span className="mb-4 lg:mb-10 w-32 lg:w-48 text-xl lg:text-3xl text-white font-black text-center border-b-2 border-white">
-                Our Vision
-              </span>
+              
               <img
-                src="https://img.freepik.com/free-vector/businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-franchising-distribution-concept-white-background_335657-2028.jpg?w=1380&t=st=1689683232~exp=1689683832~hmac=02a2370761562a362479bf489aefe09bfb90e60c9944cc04cedc9ef4ea8cffd2"
+                src="/vision.png"
                 alt="planet-01"
-                className="md:w-[400px] lg:w-[500px] w-full h-[300px] rounded-[32px] object-cover"
+                className="h-auto sm:h-96"
               />
             </div>
           </div>
         </section>
 
-        {/* Our Team section */}
-        <section className="mt-12 lg:mt-18 p-4 lg:p-8 flex flex-col items-center">
-          <div className="p-4 lg:w-3/5 flex flex-col items-center">
-            <h2 className="mb-4 w-full text-3xl text-white font-black text-center">
-              Our Team
-            </h2>
-            <p className="text-xl text-white text-center">
-              We're successful because of "Our Team." Our talented and diverse
-              team works together to deliver excellent results for our clients.
-            </p>
-          </div>
-          <div className="mt-8 w-full">
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {OurTeam.map((world, index) => (
-                <motion.nav
-                  key={index}
-                  variants={OurTeam}
-                  initial="hidden"
-                  whileInView="show"
-                >
-                  <TechnoCard techno={world} />
-                </motion.nav>
-              ))}
-            </div>
-          </div>
-        </section>
+      
       </div>
 
       <div className="w-full h-72 mx-auto flex justify-center text-white text-lg font-bold pb-5">
