@@ -41,7 +41,7 @@ const services = () => {
     </div>
   );
   const TechnoCard = ({ techno }) => (
-    <div className="m-2 p-1 flex flex-col items-center ">
+    <div className="m-2 p-1 sm:flex sm:flex-col items-center ">
       <div className="p-1">
         <img
           src={techno.url}
@@ -103,10 +103,10 @@ const services = () => {
           </section>
           {/* technologys */}
           <div className="h-full w-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#632381] via-[#1A232E] to-[#1A232E] md:grid-cols-2">
-            <section className="mt-18 p-8 flex flex-col items-center">
-              <div className=" p-8 flex flex-col items-center ">
-                <div className=" p-8 flex flex-col items-center">
-                  <h2 className=" p-8 flex flex-col items-center text-3xl  text-white font-black">
+            <section className="mt-18 p-8 sm:flex sm:flex-col items-center">
+              <div className=" sm:p-8 flex flex-col items-center ">
+                <div className=" sm:p-8 flex flex-col items-center">
+                  <h2 className=" sm:p-8 mb-3 flex flex-col items-center text-3xl  text-white font-black">
                     Driving Innovation through Powerful Digital Solutions
                   </h2>
                   <p className="text-xl  text-white">
@@ -116,7 +116,7 @@ const services = () => {
                     horizons.
                   </p>
                 </div>
-                <div className="ml-2 flex flex-row  items-center w-full">
+                <div className="ml-2 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8  items-center w-full">
                   {technology.map((world, index) => (
                     <motion.nav
                       key={index}
@@ -133,8 +133,8 @@ const services = () => {
           </div>
           {/* contact redirect page  */}
           <section className="flex flex-col items-center">
-            <div className="p-20 flex flex-col items-center">
-              <div className="bg-[#253B47] p-20 flex flex-col items-left border-black shadow-md rounded-3xl">
+            <div className="p-4 sm:p-20 flex flex-col items-center">
+              <div className="bg-[#253B47] p-4 sm:p-20 flex flex-col items-left border-black shadow-md rounded-3xl">
                 <h2 className=" p-8 flex flex-col items-left text-3xl  text-white font-black">
                   From web to mobile, databases to software, we make your goals
                   a reality.
@@ -150,7 +150,7 @@ const services = () => {
                 </p>
                 <div className="flex flex-col items-left ">
                   <div className="p-8">
-                    <a href="/contact">
+                    <a href="/contact" className=''>
                       <button className={`${styles.hellobutton}`}>
                         Say Hello
                         <span
@@ -162,7 +162,7 @@ const services = () => {
                       </button>
                     </a>
                     <a href="/services">
-                      <button className="border-2 border-blue-900 ml-6 bg-white font-medium text-blue-900 px-4 py-2 rounded">
+                      <button className="mt-3 sm:mt-0 border-2 border-blue-900 sm:ml-6 bg-white font-medium text-blue-900 px-4 py-2 rounded">
                         Learn More →
                       </button>
                     </a>
