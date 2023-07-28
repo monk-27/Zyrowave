@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { Navbar, Footer } from '../../components';
 import styles from '../../styles';
-import { OurTeam } from '../../constants';
+// import { OurTeam } from '../../constants';
 
 const about = () => {
   const [msg, setMsg] = useState(
@@ -42,6 +42,7 @@ const about = () => {
     }
   };
 
+  // eslint-disable-next-line no-unused-vars
   const TechnoCard = ({ techno }) => (
     <div className="m-2 p-1 flex flex-col items-center ">
       <div className="p-1">
@@ -223,7 +224,6 @@ const about = () => {
         <section className={`${styles.paddingss}`} id="explore">
           <div className="p-4 lg:p-8 flex flex-col lg:flex-row items-center lg:items-left">
             <div className="lg:w-1/2 flex flex-col items-center">
-             
               <img
                 src="/mission.png"
                 alt="planet-01"
@@ -261,7 +261,6 @@ const about = () => {
               </p>
             </div>
             <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center">
-              
               <img
                 src="/vision.png"
                 alt="planet-01"
@@ -270,8 +269,6 @@ const about = () => {
             </div>
           </div>
         </section>
-
-      
       </div>
 
       <div className="w-full h-72 mx-auto flex justify-center text-white text-lg font-bold pb-5">

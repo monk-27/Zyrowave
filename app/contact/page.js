@@ -52,7 +52,7 @@ const Contact = () => (
       <div className="w-full">
         <div className="max-w-auto mx-auto bg-[#253B47]
          rounded-lg px-8
-         py-6 mx-2 md:mx-0 md:mr-4 shadow-lg  "
+         py-6 md:mx-0 md:mr-4 shadow-lg  "
         >
           <h1 className="text-white">
             Ready to Discuss? Fill Out Our Contact Form
