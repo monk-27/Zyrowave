@@ -6,6 +6,7 @@ import React from 'react';
 import { Navbar, Footer } from '../../components';
 
 const Contact = () => (
+
   <div className="bg-primary-black min-h-screen flex flex-col">
     <Navbar />
 

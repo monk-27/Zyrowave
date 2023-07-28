@@ -14,27 +14,27 @@ const about = () => {
     switch (approach) {
       case 1:
         setMsg(
-          'We kickstart our journey by immersing ourselves in your vision and goals. Through creative brainstorming and thoughtful discussions, we conceive inspired concepts that lay the groundwork for your project.',
+          'With years of experience in the industry, our team possesses a wealth of knowledge and expertise in platform development. We have successfully',
         );
         break;
       case 2:
         setMsg(
-          'Before we embark on development, we conduct a thorough analysis to ensure our ideas align with your needs. Our team crafts a strategic blueprint, outlining a well-defined roadmap for seamless project execution.',
+          'We value open communication with our clients, keepingnyou informed about campaign progress and performance',
         );
         break;
       case 3:
         setMsg(
-          'Our skilled developers, designers, and marketers collaborate to bring your vision to life. From web and app development to software solutions and captivating UI/UX design, we infuse brilliance into every facet of your project.',
+          'Our commitment to your success extends beyond the design phase. We provide ongoing support and guidance to ensure the successful implementation of the UI/UX design.',
         );
         break;
       case 4:
         setMsg(
-          ' We leave no room for errors. Our rigorous testing process meticulously assesses every detail to ensure flawless performance and functionality. This ensures that your end-product is polished and seamless.',
+          ' We are committed to meeting deadlines and delivering your app on time.',
         );
         break;
       case 5:
         setMsg(
-          'The culmination of our efforts results in the unveiling of your masterpiece. With utmost care, we finalize and deliver your project, ready to make a lasting impact on your audience. Your success becomes our success as we witness excellence unfold.',
+          'Our competitive pricing ensures excellent value for your investment.',
         );
         break;
       default:
@@ -132,10 +132,10 @@ const about = () => {
           <div className="p-4 lg:p-8 flex flex-col items-center">
             <div className="p-4 flex flex-col items-center w-full">
               <h2 className="mt-12 mb-4 w-full text-2xl lg:text-3xl text-white font-black text-center">
-                Our Core Approach
+                What Sets Us Apart
               </h2>
               <span className="mb-2 w-full text-2xl lg:text-3xl text-white font-black text-center border-b-2 mt-[-30px] text-transparent">
-                Our Core Approach
+                What Sets Us Apart:
               </span>
               <p className="text-lg lg:text-xl text-white text-center">{msg}</p>
               <div className="p-4 lg:w-3/5 flex flex-wrap justify-center items-center mt-8">
@@ -151,7 +151,7 @@ const about = () => {
                     className="w-[80px] h-[80px] rounded-[32px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Inspired Ideation
+                    Expertise and Experience
                   </p>
                 </div>
                 <div
@@ -166,7 +166,7 @@ const about = () => {
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Strategic Blueprint
+                    Transparent Communication
                   </p>
                 </div>
                 <div
@@ -181,7 +181,7 @@ const about = () => {
                     className="w-[80px] h-[80px] rounded-[10px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Crafting Brilliance
+                    Continuous Support
                   </p>
                 </div>
                 <div
@@ -196,7 +196,7 @@ const about = () => {
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Precision Testing
+                    Timely Delivery
                   </p>
                 </div>
                 <div
@@ -211,7 +211,7 @@ const about = () => {
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
                   <p className="mt-2 text-sm lg:text-lg text-white text-center">
-                    Excellence Unveiled
+                    Affordable Solutions
                   </p>
                 </div>
               </div>

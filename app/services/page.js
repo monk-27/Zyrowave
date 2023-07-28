@@ -1,12 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/button-has-type */
 
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Navbar, Footer } from '../../components';
 import styles from '../../styles';
 import { technoVariants, fadeIn, staggerContainer } from '../../utils/motion';
 import { exploreWorlds, technology } from '../../constants';
+// import DetailsPage from '../details/page';
 
 const services = () => {
   const Card = ({ world }) => (
@@ -29,6 +32,11 @@ const services = () => {
         <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400">
           {world.description}
         </p>
+        <Link href={`/details/${world.id}`}
+          className="text-white font-bold py-2 px-4 rounded"
+        >
+          Read More
+        </Link>
       </div>
     </div>
   );
