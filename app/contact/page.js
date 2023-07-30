@@ -42,11 +42,11 @@ const Contact = () => {
         setName('');
         setEmail('');
       } else {
-        // Handle non-JSON response or error scenario
+       
         console.error('Error:', response.statusText);
       }
     } catch (error) {
-      // Handle fetch error
+      
       console.error('Error:', error);
     }
   };
