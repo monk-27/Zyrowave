@@ -7,6 +7,7 @@ import styles from '../../styles';
 // import { OurTeam } from '../../constants';
 
 const about = () => {
+  
   const [msg, setMsg] = useState(
     'We deliver reliable and high-performance products to our clients so that they can take their businesses to the next level with a high growth rate.',
   );
@@ -147,7 +148,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/ideas.gif"
+                    src="/cert.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[32px] object-cover"
                   />
@@ -162,7 +163,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/diagrams.gif"
+                    src="/meet.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
@@ -177,7 +178,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/codings.gif"
+                    src="/tech.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[10px] object-cover"
                   />
@@ -192,7 +193,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/reports.gif"
+                    src="/24.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
@@ -207,7 +208,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/rockets.gif"
+                    src="/ball.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />

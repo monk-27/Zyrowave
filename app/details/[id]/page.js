@@ -140,7 +140,7 @@ return (
                   }}
               >
                 <img
-                  src="/idea.gif"
+                  src="/ideas.gif"
                   alt="planet-01"
                   className="w-[80px] h-[80px] rounded-[32px] object-cover"
                 />
@@ -155,7 +155,7 @@ return (
                   }}
               >
                 <img
-                  src="/diagram.gif"
+                  src="/diagrams.gif"
                   alt="planet-01"
                   className="w-[80px] h-[80px] rounded-[2px] object-cover"
                 />
@@ -170,7 +170,7 @@ return (
                   }}
               >
                 <img
-                  src="/coding.gif"
+                  src="/codings.gif"
                   alt="planet-01"
                   className="w-[80px] h-[80px] rounded-[10px] object-cover"
                 />
@@ -185,7 +185,7 @@ return (
                   }}
               >
                 <img
-                  src="/report.gif"
+                  src="/reports.gif"
                   alt="planet-01"
                   className="w-[80px] h-[80px] rounded-[2px] object-cover"
                 />
@@ -200,7 +200,7 @@ return (
                   }}
               >
                 <img
-                  src="/rocket.gif"
+                  src="/rockets.gif"
                   alt="planet-01"
                   className="w-[80px] h-[80px] rounded-[2px] object-cover"
                 />
