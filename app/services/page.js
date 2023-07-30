@@ -32,10 +32,9 @@ const services = () => {
         <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400">
           {world.description}
         </p>
-        <Link href={`/details/${world.id}`}
-          className="text-white font-bold py-2 px-4 rounded"
-        >
-          Read More
+        <Link href={`/details/${world.id}`} >
+        <button className="text-white py-2 px-4 rounded bg-violet-600 font-bold hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300">Learn More →</button>
+
         </Link>
       </div>
     </div>

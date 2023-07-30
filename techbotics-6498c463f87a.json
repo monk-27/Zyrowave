@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "techbotics",
+  "private_key_id": "6498c463f87afc192ed24b473b58109bde0563c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC8Ty1pzUxD1pom\nvhK0ryNEFVBZwQlvBmqZO3oxPXJbh1PdQZAYW3yX3WGUbsXS4oQV3wm7boFIyq80\ne0GXeF7WAK1uwsOWSytg4HnXqmzoFkcXfGhi2wrGZ+EiNzaNAB+9GLRa03BjhjP/\nX+FX+VXM2uS6nbFAuzq09X/4dBPl4/jsubjicX93HfdQ+2juuNI56zGyEaQ+MJPt\nGw95vwtdqLMF0vqF1LPAS9q+eCv/zkw2b2kVCWjfKSSOMVKjlpkVZsqv7staeUEF\nESFxzMNAHvPYOqgHbZ/Cv0CNAMGLuhnfKmMp9hhq95Ki/tNSY51svNGvvQVnbSTr\n/xI1nUcDAgMBAAECggEAAnxFDC1ygT624CYIFyxsmbxySAz9M+Lwyz72uOmntb+O\ngtAXt8qVVWfNnujrYYIt3iAIf9nQiQZr05SA5B/pmId/woN9k2FAnFG6KfeM4m9Q\n1uWEdzGO7dl3Jj12UdwbjyJhVwWNaTLfQtKgJcobsM1+0Vu9eC5Acxz+aGgXzyPy\nXC7m+nItlYLwGKgMxeZhtOhYAEjywbwWweyDLI4RDDBhZGxY99aWBF7cQsbKMtoE\ncevN2MAwRvaG68mT2l3DvrzdOOL/gbYy80h/n2wdvi3me8FU5+5WsZv/KqMztpB3\nRXHgnC9lmRH2lBJL48l/F/9Htq3bdAJzTzmP8kLKwQKBgQDfRyDBLj7MI2eYP/SF\nyyHL000zdliW4+Kb/GcHMaZtkFmofKH4Ae49MbHDIHMxqm4dc32mwdVbgKl7WLfa\n56GV31rin02xkLLr+uF2ICWssPyBN8dcLnY8UXeqiFz3mI5JGGcBBSxKFn7qJW9E\nyURu3hUlE49CKvjJ95yadXX84wKBgQDX6BwG/Yxdl6CWO+WdA0kCd8R+fbxLmMvm\nLeLDmbVLJ75xlf6U9RYnjNzKexT3euXdsDm+m/9dO1aOxqPlQPQXe7YXfcVi+YKo\npuirC+KGo11xP7ps6qa0QNW1yx2eN8eJLplXeIqJPAl7you4iU2ujyLgaf5e8n6e\nhzc1NpzHYQKBgQCGvif4LO5cx2j3KnFoZKPqm4PVcLAZr0DMHdAXOVFUgW56DWy5\nfIDHkTvTo7ug11dIkq/beNJHPCgLdgjOJEcRaQ8yAC0k4Uv4uRhi7xeNVemsGXtI\nGAnmcMuksFJaYUhMuFtA9Fw8AcNpjlnNyyBvP7rG+zzTE5e8Wp+5XvVrPQKBgAi1\nCKRTh1yi58wHQFxTrJcX42nCglx+HgL7aMDAqyoLwUdtaCXzuGAB80mLKy5L24dU\nOw/v1J2a7gO2CRgOxYlI6PALl3FFZLqOeKWlRg5t+i++BTOtRunQD45UUa52y2pB\n4ddAOj4MmMlQQtA/YU2f4iUwwRxtJSQZieVwfWQhAoGBAM9uJ2QVVr2ac0KDG0rJ\n01OEo5WEEyQJkgWOGQp8Lko9mcEVDYcuLA90bTcyu3xnHVCcYDj5rlTTHZVW0bSq\nt5fhcB3/Xln/qHcjQzHlZqqVUoMr+7KQEd8pjP/0x/c6xu0pKDe7jOxijPPoMsg2\nDNcyv/SDj37etj3lGWo2BpWJ\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheet@techbotics.iam.gserviceaccount.com",
+  "client_id": "104752015594831441388",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40techbotics.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

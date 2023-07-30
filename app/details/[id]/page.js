@@ -57,36 +57,28 @@ return (
     <Navbar />
     <div className="justify-center items-center">
       <section className={`${styles.paddings} mb-12`}>
-        <h2 className={`mt-1 mx-auto text-xl lg:text-4xl xl:text-6xl text-yellow-300 font-black text-center ${isAnimated ? 'animate-pulse' : ''}`}>
+        <h2 className={`mt-1 mx-auto text-xl lg:text-4xl xl:text-6xl text-violet-600 font-black pb-12 shadow-lg shadow-yellow-500/10 text-center `}>
 
           {showdata.title}
 
         </h2>
-        <div className="flex justify-center mt-5 md:mt-8 md:bg-transparent ">
-          {/* <img
-            src={showdata.imgUrl}
-            alt="planet-01"
-            className="w-full h-auto max-w-[600px] md:max-w-half rounded-[32px] object-cover md:bg-transparent "
-          /> */}
-        </div>
+        
 
         <div className="mt-5 md:flex items-center justify-center">
-          <div className="md:w-1/2 flex justify-center mt-5 md:mt-0 md:bg-transparent ">
+          <div className="md:w-1/2 flex justify-center mt-5 md:mt-0 md:bg-transparent  ">
             <img
-              src={showdata.imgUrl}
+              src={showdata.imgUrl1}
               alt="planet-01"
-              className="w-full h-auto max-w-[600px] md:max-w-half rounded-[32px] object-cover md:bg-transparent "
+              className="w-full h-auto max-w-[600px] md:max-w-half rounded-[32px] object-cover md:bg-transparent shadow-lg shadow-yellow-500/50 "
             />
+            
+
           </div>
-          {/* <StartSteps
-            // key={feature}
-            number={`${showdata.id < 10 ? '0' : ''} ${showdata.id + 1}`}
-            // text={feature}
-          /> */}
-          <div className="md:w-1/2  md:max-w-[600px] md:mr-12 flex flex-col items-center md:items-start md:text-left">
+          
+          <div className="md:w-1/2 px-10 md:max-w-[600px] md:mr-12 grid grid-col-6 items-center md:items-start md:text-left ">
             <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
-              <span className="mt-5 text-yellow-300  font-bold lg:text-2xl">
-                {showdata.subtitle}
+              <span className="mt-5 text-yellow-400  font-bold lg:text-2xl">
+              ➤ {showdata.subtitle}
               </span>
               <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
                 {showdata.description1}
@@ -94,15 +86,16 @@ return (
             </p>
             <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
               <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
-                {showdata.subtitle1}
+              ➤  {showdata.subtitle1}
               </span>
               <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
                 {showdata.description2}
               </span>
             </p>
             <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
+      
               <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
-                {showdata.subtitle2}
+              ➤{showdata.subtitle2}
               </span>
               <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
                 {showdata.description3}
@@ -110,7 +103,7 @@ return (
             </p>
             <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
               <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
-                {showdata.subtitle3}
+              ➤ {showdata.subtitle3}
               </span>
               <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
                 {showdata.description4}
@@ -118,7 +111,7 @@ return (
             </p>
             <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
               <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
-                {showdata.subtitle4}
+              ➤{showdata.subtitle4}
               </span>
               <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
                 {showdata.description5}

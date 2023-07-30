@@ -17,13 +17,13 @@ const Page = () => (
       <div className="gradient-04 z-0" />
       <WhatsNew />
     </div>
-    <World />
-    <div className="relative">
+    {/* <World /> */}
+    {/* <div className="relative">
       <Insights />
-      <div className="gradient-04 z-0" />
-
+      <div className="gradient-04 z-0" /> */}
+{/* 
       <Feedback />
-    </div>
+    </div> */}
     <div className="w-full h-72 mx-auto flex justify-center text-white text-lg font-bold pb-5">
       <Footer />
     </div>

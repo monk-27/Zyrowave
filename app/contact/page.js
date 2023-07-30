@@ -2,10 +2,58 @@
 
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Footer } from '../../components';
 
-const Contact = () => (
+const Contact = () => {
+  const [name,setName]=useState('');
+  const [phone,setPhone]=useState('');
+
+  const [email,setEmail]=useState('');
+
+  const [message,setMessage]=useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const form = {
+      name,
+      email,
+      phone,
+      message,
+    };
+  
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+  
+      if (response.ok) {
+        const content = await response.json();
+        console.log(content);
+        alert("CONGRATULATIONS!!!!!! WE WILL CONTACT YOU SHORTLY. ");
+        setMessage('');
+        setPhone('');
+        setName('');
+        setEmail('');
+      } else {
+        // Handle non-JSON response or error scenario
+        console.error('Error:', response.statusText);
+      }
+    } catch (error) {
+      // Handle fetch error
+      console.error('Error:', error);
+    }
+  };
+  
+
+
+  return(
 
   <div className="bg-primary-black min-h-screen flex flex-col">
     <Navbar />
@@ -50,9 +98,10 @@ const Contact = () => (
         </div>
       </div>
       <div className="w-full">
-        <div className="max-w-auto mx-auto bg-[#253B47]
+        <form className="max-w-auto mx-auto bg-[#253B47]
          rounded-lg px-8
          py-6 md:mx-0 md:mr-4 shadow-lg  "
+         onSubmit={handleSubmit}
         >
           <h1 className="text-white">
             Ready to Discuss? Fill Out Our Contact Form
@@ -64,9 +113,11 @@ const Contact = () => (
                   htmlFor="firstName"
                   className="block text-white font-bold mb-2"
                 >
-                  First Name
+                   Full Name
                 </label>
                 <input
+                value={name}
+                onChange={e=>setName(e.target.value)}
                   type="text"
                   id="firstName"
                   className="w-full border border-gray-400 py-2 px-3 rounded-lg focus:outline-none focus:border-blue-500"
@@ -74,14 +125,16 @@ const Contact = () => (
               </div>
               <div className="w-full md:w-1/2 md:pl-2">
                 <label
-                  htmlFor="lastName"
+                  htmlFor="phone"
                   className="block text-white font-bold mb-2"
                 >
-                  Last Name
+                  Phone Number
                 </label>
                 <input
-                  type="text"
-                  id="lastName"
+                  type="number"
+                  id="tel"
+                  value={phone}
+                onChange={e=>setPhone(e.target.value)}
                   className="w-full border border-gray-400 py-2 px-3 rounded-lg focus:outline-none focus:border-blue-500"
                 />
               </div>
@@ -91,6 +144,8 @@ const Contact = () => (
             </label>
             <input
               type="email"
+              value={email}
+                onChange={e=>setEmail(e.target.value)}
               id="email"
               className="w-full border border-gray-400 py-2 px-3 rounded-lg focus:outline-none focus:border-blue-500"
             />
@@ -103,6 +158,8 @@ const Contact = () => (
               Message
             </label>
             <textarea
+            value={message}
+                onChange={e=>setMessage(e.target.value)}
               id="message"
               className="w-full border border-gray-400 py-2 px-3 rounded-lg h-32 focus:outline-none focus:border-blue-500"
             />
@@ -115,10 +172,10 @@ const Contact = () => (
               </label>
             </div>
           </div>
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg w-full hover:bg-blue-600 transition-colors">
+          <button type="submit" className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg w-full hover:bg-blue-600 transition-colors">
             Submit
           </button>
-        </div>
+        </form>
       </div>
     </div>
 
@@ -126,6 +183,6 @@ const Contact = () => (
       <Footer />
     </div>
   </div>
-);
+)};
 
 export default Contact;

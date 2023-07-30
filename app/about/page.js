@@ -73,7 +73,7 @@ const about = () => {
           <div className="mt-5 md:flex items-center justify-center">
             <div className="md:w-1/2  md:max-w-[600px] md:mr-12 flex flex-col items-center md:items-start md:text-left">
               <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
-                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                <span className="mt-5 text-yellow-600 text-center font-bold lg:text-2xl">
                   End-to-End Solutions :
                 </span>
                 <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
@@ -84,7 +84,7 @@ const about = () => {
                 </span>
               </p>
               <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
-                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                <span className="mt-5 text-yellow-600 text-center font-bold lg:text-2xl">
                   Innovation and Expertise:
                 </span>
                 <span className="md:text-base sm:text-2xl text-white text-center font-bold">
@@ -95,7 +95,7 @@ const about = () => {
                 </span>
               </p>
               <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
-                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                <span className="mt-5 text-yellow-600 text-center font-bold lg:text-2xl">
                   Collaborative Partnership:
                 </span>
                 <span className="md:text-base sm:text-2xl text-white text-center font-bold">
@@ -106,7 +106,7 @@ const about = () => {
                 </span>
               </p>
               <p className="mt-5 md:text-base sm:text-2xl text-white text-center md:text-left ">
-                <span className="mt-5 text-yellow-300 text-center font-bold lg:text-2xl">
+                <span className="mt-5 text-yellow-600 text-center font-bold lg:text-2xl">
                   Customer-Centric Support:
                 </span>
                 <span className="md:text-base sm:text-2xl text-white text-center font-bold">
@@ -120,7 +120,7 @@ const about = () => {
 
             <div className="md:w-1/2 flex justify-center mt-5 md:mt-0 md:bg-transparent ">
               <img
-                src="/choose.gif"
+                src="/uss.jpg"
                 alt="planet-01"
                 className="w-full h-auto max-w-[600px] md:max-w-half rounded-[32px] object-cover md:bg-transparent "
               />
@@ -147,7 +147,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/idea.gif"
+                    src="/ideas.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[32px] object-cover"
                   />
@@ -162,7 +162,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/diagram.gif"
+                    src="/diagrams.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
@@ -177,7 +177,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/coding.gif"
+                    src="/codings.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[10px] object-cover"
                   />
@@ -192,7 +192,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/report.gif"
+                    src="/reports.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
@@ -207,7 +207,7 @@ const about = () => {
                   }}
                 >
                   <img
-                    src="/rocket.gif"
+                    src="/rockets.gif"
                     alt="planet-01"
                     className="w-[80px] h-[80px] rounded-[2px] object-cover"
                   />
