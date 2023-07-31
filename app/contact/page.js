@@ -58,8 +58,8 @@ const Contact = () => {
   <div className="bg-primary-black min-h-screen flex flex-col">
     <Navbar />
 
-    <div className="flex flex-col items-center justify-center flex-grow md:flex-row container py-10">
-      <div className="w-full">
+   <div className="flex flex-col items-center justify-center flex-grow md:flex-row container p-10"> 
+      <div className="w-full mb-4 md:mb-0 md:mr-4">
         <div className="max-w-md mx-auto bg-[#253B47] overflow-hidden shadow-lg rounded-lg px-8 py-6 mb-8
         transition-all duration-300 hover:shadow-md "
         >

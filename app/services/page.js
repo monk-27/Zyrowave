@@ -23,13 +23,13 @@ const services = () => {
           className="w-full h-full border-black shadow-2xl rounded-3xl mr-20 "
         />
       </div>
-      <div className="flex flex-col justify-between p-4 leading-normal">
-        <h2 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white relative pb-2">
+      <div className="flex flex-col justify-between leading-normal">
+        <h2 className="mb-1 sm:text-sm text-2xl sm:font-regular font-bold tracking-tight text-white dark:text-white relative ">
           {world.title}
           <br />
           <span className="glowing-underline" />
         </h2>
-        <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400">
+        <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400 hidden md:block">
           {world.description}
         </p>
         <Link href={`/details/${world.id}`} >
