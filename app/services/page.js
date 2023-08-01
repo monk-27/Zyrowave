@@ -1,20 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/button-has-type */
 
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Navbar, Footer } from '../../components';
-import styles from '../../styles';
-import { technoVariants, fadeIn, staggerContainer } from '../../utils/motion';
-import { exploreWorlds, technology } from '../../constants';
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Navbar, Footer } from "../../components";
+import styles from "../../styles";
+import { technoVariants, fadeIn, staggerContainer } from "../../utils/motion";
+import { exploreWorlds, technology } from "../../constants";
 // import DetailsPage from '../details/page';
 
 const services = () => {
   const Card = ({ world }) => (
     <div
-      className={`${styles.servicescard} transform transition-transform hover:scale-100 `}
+      className={`${styles.servicescard} transform transition-transform hover:scale-100`}
     >
       <div className="h-full w-full p-4">
         <img
@@ -32,9 +32,12 @@ const services = () => {
         <p className="h-auto overflow-hidden mb-3 font-normal text-white dark:text-gray-400 hidden md:block">
           {world.description}
         </p>
-        <Link href={`/details/${world.id}`} >
-        <button className="text-white py-2 px-4 rounded bg-violet-600 font-bold hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300">Learn More →</button>
-
+        <Link href={`/details/${world.id}`}>
+        <div className="flex flex-col items-center">
+  <button className="text-white py-2 px-4 rounded bg-violet-600 font-bold hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 mt-4 mb-12">
+    Learn More →
+  </button>
+</div>
         </Link>
       </div>
     </div>
@@ -72,25 +75,25 @@ const services = () => {
               className={`${styles.innerWidth} mx-auto flex flex-col`}
             >
               <div className=" p-8 flex flex-col items-center">
-                <h2 className=" p-8 flex flex-col items-center text-3xl  text-white font-black">
+                <h2 className="p-4 md:p-8 flex flex-col items-center text-2xl md:text-3xl text-violet-600 font-black">
                   Customized solutions that drive growth and ignite success.
                 </h2>
                 <p className="text-xl text-white flex flex-col items-center">
                   Empower your business to soar with our bespoke solutions,
-                  unlocking its boundless potential.{' '}
+                  unlocking its boundless potential.{" "}
                   <span>
-                    {' '}
+                    {" "}
                     We blend technology prowess and strategic finesse to craft
-                    personalized plans that propel your growth and drive
+                    personalized plans that propel your growth and
+                    driveunrivaled success.
                   </span>
-                  unrivaled success.
                 </p>
               </div>
               <div className="p-8 flex flex-col items-center">
                 {exploreWorlds.map((world, index) => (
                   <motion.div key={index} whileHover={{ scale: 1.1 }}>
                     <motion.div
-                      variants={fadeIn('up', 'tween', 0.1, 1)}
+                      variants={fadeIn("up", "tween", 0.1, 1)}
                       className="relative w-full md:-mt-[20px] -mt-[12px]"
                     >
                       <Card world={world} />
@@ -139,10 +142,10 @@ const services = () => {
                   a reality.
                 </h2>
                 <p className="pl-8 text-xl  text-white">
-                  {' '}
+                  {" "}
                   Join us on a software development adventure, turning your
                   ideas into remarkable reality. <br /> Experience the
-                  difference of a team that genuinely cares about your success.{' '}
+                  difference of a team that genuinely cares about your success.{" "}
                   <br />
                   Contact us now for a quote and let's bring your project to
                   life!

@@ -16,7 +16,7 @@ const styles = {
   navPadding: 'pt-[98px]',
   navoption: 'font-extrabold text-[18px] leading-[30px] text-white font-semibold',
   navlogo: 'font-extrabold text-[24px] leading-[30px] text-white font-semibold',
-  servicescard: 'mt-7 flex flex-col items-center h-72  border border-black rounded-lg shadow md:flex-row w-full md:max-w-custom-card-width hover:bg-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 overflow-hidden shadow-lg',
+  servicescard: 'mt-7 flex flex-col items-center h-80  border border-black rounded-lg shadow md:flex-row w-full md:max-w-custom-card-width hover:bg-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 overflow-hidden shadow-lg',
 
   // hero section
   heroHeading:
