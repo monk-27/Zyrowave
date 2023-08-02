@@ -63,10 +63,12 @@ const Contact = () => {
         <div className="max-w-md mx-auto bg-[#253B47] overflow-hidden shadow-lg rounded-lg px-8 py-6 mb-8
         transition-all duration-300 hover:shadow-md "
         >
-          <h1 className="text-white text-4xl font-extrabold">Contact Us for a Personalized Solution to Suit Your Needs.</h1>
+          <h1 className="text-white text-4xl font-extrabold">Let's Talk </h1>
           <br />
+          <span className='text-white text-lg'>For Tailored Results that Cater to Your Unique Requirements.</span>
+          <br /><br />
           <span className="text-white text-lg">
-            Don't Delay Your Business's Success. Contact Us to Arrange a Meeting Today.
+          Unlock your business's full potential and take action now! Reach out to us and schedule a meeting for accelerated success.
           </span>
           <br />
           <br />

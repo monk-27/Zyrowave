@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-        <h2 className="text-[34px] leading-[30px] text-white font-black"><a href="/">TechBotics</a></h2>
+        <h2 className="text-[34px] leading-[30px] text-white font-black"><a href="/">ZyroWave</a></h2>
         <div className="mx-4 md:mx-30 gap-4 md:gap-8 flex flex-wrap md:flex-nowrap relative">
           <h6 className={`${styles.navoption} hover:text-pink-600 md:contrast-50 hidden md:flex`}>
             {pathname === '/services' ? <a href="/services" className="text-pink-600">Services</a> : <a href="/services">Services</a>}

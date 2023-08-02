@@ -78,7 +78,7 @@ const about = () => {
                   End-to-End Solutions :
                 </span>
                 <span className="md:text-base sm:text-2xl text-white text-center font-bold ml-1">
-                  Techbotics is your one-stop destination for all things
+                  ZyroWave is your one-stop destination for all things
                   tech-related. From software development to digital marketing,
                   we offer end-to-end solutions that cover every aspect of your
                   digital journey.
@@ -111,7 +111,7 @@ const about = () => {
                   Customer-Centric Support:
                 </span>
                 <span className="md:text-base sm:text-2xl text-white text-center font-bold">
-                  At Techbotics, your satisfaction is our top priority. Our
+                  At ZyroWave, your satisfaction is our top priority. Our
                   dedicated support team is always ready to address any queries
                   or issues, ensuring that you receive exceptional customer
                   service at every step.
@@ -236,11 +236,11 @@ const about = () => {
                 Our Mission
               </h2>
               <p className="text-md lg:text-xl text-white text-center lg:text-left">
-                At Techbotics, we are driven by a simple yet ambitious mission to become your reliable and valued partner in the digital realm. Our goal is to empower businesses with cutting-edge software solutions and strategic digital marketing services that not only cater to their distinct requirements but also go above and beyond their expectations.
+                At ZyroWave, we are driven by a simple yet ambitious mission to become your reliable and valued partner in the digital realm. Our goal is to empower businesses with cutting-edge software solutions and strategic digital marketing services that not only cater to their distinct requirements but also go above and beyond their expectations.
 
                 With a strong focus on innovation and expertise, we pride ourselves on staying at the forefront of technological advancements to provide you with state-of-the-art web and mobile app development services. Our dedicated team works collaboratively with you, fostering a  collaborative partnership throughout the entire development and marketing process.
 
-                Customer satisfaction is at the core of everything we do.  At Techbotics, we are committed to delivering excellence, enabling your business to thrive in the digital landscape and achieve unparalleled success.
+                Customer satisfaction is at the core of everything we do.  At ZyroWave, we are committed to delivering excellence, enabling your business to thrive in the digital landscape and achieve unparalleled success.
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ const about = () => {
                 Our Vision
               </h2>
               <p className="text-md lg:text-xl text-white text-center lg:text-left">
-                At Techbotics, our vision is to be a trailblazing force in the realm of technology and digital innovation, driving positive change for businesses and individuals alike. We envision a future where cutting-edge software solutions and dynamic digital marketing strategies come together seamlessly, empowering businesses to thrive in the rapidly evolving digital landscape.
+                At ZyroWave, our vision is to be a trailblazing force in the realm of technology and digital innovation, driving positive change for businesses and individuals alike. We envision a future where cutting-edge software solutions and dynamic digital marketing strategies come together seamlessly, empowering businesses to thrive in the rapidly evolving digital landscape.
 
                 As a trusted partner, we will relentlessly pursue the development of state-of-the-art web and mobile applications, ensuring they cater to your specific needs and goals.
 

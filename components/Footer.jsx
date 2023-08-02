@@ -19,16 +19,16 @@ const Footer = () => (
             alt="Flowbite Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            TechBotics
+            ZyroWave
           </span>
         </a>
         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              About
+            <a href="/about" className="mr-4 hover:underline md:mr-6">
+              About Us
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#" className="mr-4 hover:underline md:mr-6">
               Privacy Policy
             </a>
@@ -37,10 +37,10 @@ const Footer = () => (
             <a href="#" className="mr-4 hover:underline md:mr-6">
               Licensing
             </a>
-          </li>
+          </li> */}
           <li>
-            <a href="#" className="hover:underline">
-              Contact
+            <a href="/contact" className="hover:underline">
+              Contact Us
             </a>
           </li>
         </ul>
@@ -66,7 +66,7 @@ const Footer = () => (
                 alt="Flowbite Logo"
                 className="h-8 mb-2"
               />
-              <h1>Linkedin</h1>
+              <h1>LinkedIn</h1>
             </div>
           </li>
           <li className="ml-4 mt-2 sm:ml-10 sm:mt-0">
@@ -91,7 +91,7 @@ const Footer = () => (
           </li>
         </ul>
         <span className="block text-sm text-gray-500 sm:text-center mt-4 dark:text-gray-400">
-          © 2023 <a href="https://flowbite.com/" className="hover:underline  ">TechBotics™</a>. All Rights Reserved.
+          © 2023 <a href="/services" className="hover:underline  ">ZyroWave™</a>. All Rights Reserved.
         </span>
       </div>
     </div>
